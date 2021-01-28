@@ -5,6 +5,7 @@ Soon to be fullstack developer !
 [LET'S TALK](lien "Join me")
 
 ## Who ?
+
 - Dev front
 - Dev back
 - programmer
