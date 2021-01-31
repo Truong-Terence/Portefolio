@@ -26,7 +26,13 @@
 }
 
 #projects {
+    margin-bottom: 5em;
 }
 #contact {
+    height: inherit;
+    margin-bottom: 10em;
+    .textContact {
+        margin: 4em 0 1em 0;
+    }
 }
 
