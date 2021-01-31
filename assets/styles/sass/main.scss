@@ -1,0 +1,34 @@
+// 1- Base
+// contient les fichiers qui définissent les fondations de votre site, par exemple la police de caractères et les normes que vous voulez
+// appliquer sur tout votre site, telles que le box-sizing.
+
+// 2- Utils
+// vous rangez vos variables, fonctions, mixins et les  %placeholders pour les extensions (si vous en utilisez)
+
+// 3- Layouts
+// est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est réutilisable, par exemple un header pour les mises en page de grande taille ou un footer
+
+// 4- Components
+// est utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons.
+
+// 5- Pages
+// contient les blocs de code qui ne s’appliquent qu’à une seule page. Vous utilisez des boutons dans tout votre site, en revanche votre page d’accueil
+// comporte une section Citation et une grille de projets qui ne sont employés nulle part ailleurs.
+// En d’autres termes, pages/ contient des règles spécifiques à une seule page qui ne seront pas réutilisées ailleurs.
+
+// 6- Themes
+// c’est ici que vous stockez le code thématique, par exemple un style customisé pour Noël ou pour l’été. On ne l’utilisera pas dans notre site ;
+
+// 7- Vendors
+// est un directory pour des feuilles de style externes comme Bootstrap ou jQuery UI. En gros, il s’utilise pour tout CSS venant de l’extérieur.
+// Utiliser des frameworks comme Bootstrap permet d’accélérer le développement d’un site, car ils contiennent des feuilles de style prédéfinies pour des choses
+// comme les formulaires ou des boutons.
+
+@import"./Base/base";
+@import"./Base/grid";
+@import"./Utils/utils";
+@import"./Components/components";
+@import"./Vendors/vendors";
+@import"./Pages/pages";
+@import"./Layout/layout";
+@import"./Themes/themes";
