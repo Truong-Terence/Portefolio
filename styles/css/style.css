@@ -1,7 +1,6 @@
 html body {
   margin: 0px;
   padding: 0px;
-  background: #f5f6fa;
   height: 100%;
   width: 100%;
 }
@@ -17,7 +16,18 @@ h1 {
 
 h2 {
   margin: 0;
+  padding: 0;
   font-size: 3em;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /*
@@ -62,8 +72,32 @@ h2 {
 }
 
 /*
-/** GRID exemple
+/** GRID for my skills
 */
+.skills {
+  display: grid;
+  width: auto;
+  height: 40em;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  left: 2.5%;
+  top: -15em;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 0 0 1px #e5ebf7;
+  color: #141c3a;
+}
+
+.flexSkills {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.backEnd {
+  box-shadow: 0 0 0 1px #e5ebf7;
+}
+
 .button {
   background: #2c3e50;
   border: none;
@@ -93,30 +127,36 @@ h2 {
 
 #welcome {
   height: 59.3em;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
 #presentation {
   height: 59.3em;
-  border: 1px solid black;
-}
-
-#projects {
-  height: 59.3em;
-  border: 1px solid black;
-}
-
-#contact {
-  height: 59.3em;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
 #description {
   margin-top: 4em;
+  padding: 1em;
   height: 20em;
   width: 100%;
-  background: blue;
-  border: 1px solid black;
+  border: 1px solid transparent;
+  font-size: 1.3em;
+}
+
+.svgSkills img {
+  height: 100px;
+  width: 150px;
+}
+
+#projects {
+  height: 59.3em;
+  border: 1px solid transparent;
+}
+
+#contact {
+  height: 59.3em;
+  border: 1px solid transparent;
 }
 
 nav {

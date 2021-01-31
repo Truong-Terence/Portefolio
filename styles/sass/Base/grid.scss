@@ -40,5 +40,33 @@
 }
 
 /*
-/** GRID exemple
+/** GRID for my skills
 */
+.skills {
+    display: grid;
+    width: auto;
+    height: 40em;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: 2.5%;
+    top: -15em;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 0 1px #e5ebf7;
+    color: #141c3a;
+}
+.flexSkills {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+
+}
+.frontEnd {
+
+}
+.backEnd {
+    box-shadow: 0 0 0 1px #e5ebf7;
+}
+.developer {
+}
+    

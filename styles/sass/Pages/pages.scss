@@ -3,24 +3,34 @@
 }
 #welcome {
     height: 59.3em;
-    border: 1px solid black;
+    border: 1px solid transparent;
 }
+
 #presentation {
     height: 59.3em;
-    border: 1px solid black;
-}
-#projects {
-    height: 59.3em;
-    border: 1px solid black;
-}
-#contact {
-    height: 59.3em;
-    border: 1px solid black;
+    border: 1px solid transparent;
 }
 #description {
     margin-top: 4em;
+    padding: 1em;
     height: 20em;
     width: 100%;
-    background: blue;
-    border: 1px solid black;
+    border: 1px solid transparent;
+    font-size: 1.3em;
 }
+.svgSkills {
+    img {
+        height: 100px;
+        width: 150px;
+    }
+}
+
+#projects {
+    height: 59.3em;
+    border: 1px solid transparent;
+}
+#contact {
+    height: 59.3em;
+    border: 1px solid transparent;
+}
+
