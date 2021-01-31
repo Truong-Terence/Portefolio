@@ -140,19 +140,6 @@ ul {
   box-shadow: 0 0 0 1px #e5ebf7;
 }
 
-.svgProject img {
-  width: 100%;
-  height: 100%;
-}
-
-.project_1 {
-  background: orange;
-}
-
-.project_2 {
-  background: blue;
-}
-
 /**
  * GRID for contact me
  */
@@ -176,6 +163,7 @@ ul {
 .button {
   background: #2c3e50;
   border: none;
+  border-radius: 30px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -183,6 +171,7 @@ ul {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .title:after {
@@ -226,6 +215,41 @@ ul {
 
 #projects {
   margin-bottom: 5em;
+}
+
+.textProject {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  width: 60%;
+  justify-self: center;
+}
+.textProject h3 {
+  font-size: 2em;
+  margin-top: 3em;
+}
+.textProject em {
+  font-size: 0.5em;
+}
+.textProject button {
+  margin: auto;
+}
+
+.svgProject--left {
+  border-radius: 15px 0 0 15px;
+}
+.svgProject--right {
+  border-radius: 0 15px 15px 0;
+}
+.svgProject img {
+  width: 100%;
+  height: 100%;
+}
+
+.project_1 {
+  background: #6ab04c;
+}
+.project_2 {
+  background: #e056fd;
 }
 
 #contact {
