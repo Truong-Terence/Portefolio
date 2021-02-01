@@ -1,1 +1,19 @@
-<svg id="svgTop" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 889.82"><defs><style>.cls-1{fill:url(#Dégradé_sans_nom_55);}</style><linearGradient id="Dégradé_sans_nom_55" x1="1526.24" y1="-282.97" x2="812.32" y2="634.75" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0a3d62"/><stop offset="0.21" stop-color="#0b466b"/><stop offset="0.55" stop-color="#0e6082"/><stop offset="0.99" stop-color="#1289a7"/></linearGradient></defs><path class="cls-1" d="M1920,889.82s-100.5-304.55-376.73-304.55-1184.54,401.23-1184.54,0S0,226.53,0,226.53V0H1920Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1526.2418" y1="-473.1475" x2="812.3177" y2="444.574" gradientTransform="matrix(-1 0 0 -1 1920 889.8228)">
+		<stop  offset="0" style="stop-color:#0A3D62"/>
+		<stop  offset="0.2084" style="stop-color:#0B466B"/>
+		<stop  offset="0.5547" style="stop-color:#0E6082"/>
+		<stop  offset="0.9944" style="stop-color:#1289A7"/>
+	</linearGradient>
+	<path class="st0" d="M0,190.18c0,0,100.5,304.56,376.73,304.56s1184.53-401.23,1184.53,0S1920,853.47,1920,853.47V1080H0L0,190.18z
+		"/>
+</g>
+</svg>

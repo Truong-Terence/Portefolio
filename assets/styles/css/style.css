@@ -1,9 +1,9 @@
 html body {
-  margin: 0px;
+  margin: 0 0 5em 0;
   padding: 0px;
   height: 100%;
   width: 100%;
-  background: url(../../../../WavesTop.svg) #eff1f5;
+  background: url(../../../../waveTop.svg) top no-repeat, url(../../../../waveBot.svg) bottom no-repeat, #eff1f5;
   background-repeat: no-repeat;
 }
 
@@ -11,7 +11,9 @@ html body {
   margin: 0 12%;
 }
 
+/*                              TITLES                          */
 h1 {
+  font-family: "montSerrat", serif;
   margin: 3em 0 0 0;
   font-size: 4em;
 }
@@ -32,6 +34,7 @@ h4 {
   color: #6C63FF;
 }
 
+/*                              BALISES                             */
 a {
   text-decoration: none;
   color: black;
@@ -41,8 +44,9 @@ ul {
   list-style-type: none;
 }
 
+/*                              CLASSES                             */
 .toCome {
-  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 .underTitle {
@@ -124,10 +128,15 @@ ul {
   justify-content: space-around;
 }
 
+/*.frontEnd {
+
+}*/
 .backEnd {
   box-shadow: 0 0 0 1px #e5ebf7;
 }
 
+/*.developer {
+}*/
 /**
  * GRID for my projects
  */
@@ -167,6 +176,58 @@ ul {
 .networks div img {
   position: relative;
   top: 10px;
+}
+
+@font-face {
+  font-family: "lora";
+  src: url("../../../fonts/Lora/Lora-Bold.ttf");
+  src: url("../../../fonts/Lora/Lora-BoldItalic.ttf");
+  src: url("../../../fonts/Lora/Lora-Italic-VariableFont_wght.ttf");
+  src: url("../../../fonts/Lora/Lora-Italic.ttf");
+  src: url("../../../fonts/Lora/Lora-Medium.ttf");
+  src: url("../../../fonts/Lora/Lora-MediumItalic.ttf");
+  src: url("../../../fonts/Lora/Lora-Regular.ttf");
+  src: url("../../../fonts/Lora/Lora-SemiBold.ttf");
+  src: url("../../../fonts/Lora/Lora-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: "montSerrat";
+  src: url("../../../fonts/montSerrat/Montserrat-Black.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-BlackItalic.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-Bold.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-BoldItalic.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-ExtraBold.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-ExtraBoldItalic.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-ExtraLight.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-ExtraLightItalic.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-Italic.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-Light.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-LightItalic.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-Medium.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-MediumItalic.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-Regular.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-SemiBold.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-SemiBoldItalic.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-Thin.ttf");
+  src: url("../../../fonts/montSerrat/Montserrat-ThinItalic.ttf");
+}
+@font-face {
+  font-family: "playFairDisplay";
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-Black.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-BlackItalic.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-Bold.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-BoldItalic.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-ExtraBold.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-ExtraBoldItalic.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-Italic.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-Medium.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-MediumItalic.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-Regular.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-SemiBold.ttf");
+  src: url("../../../fonts/playFairDisplay/PlayfairDisplay-SemiBoldItalic.ttf");
+}
+nav div {
+  color: red;
 }
 
 .button {
@@ -263,7 +324,6 @@ ul {
 
 #contact {
   height: inherit;
-  margin-bottom: 10em;
 }
 #contact .textContact {
   margin: 4em 0 1em 0;
@@ -275,6 +335,9 @@ nav {
   background: transparent;
 }
 nav div {
+  font-family: "lora", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
   margin: 20px 15px 0px 15px;
   font-size: 0.8em;
 }

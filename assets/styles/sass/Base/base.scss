@@ -1,14 +1,17 @@
 html body{
-    margin: 0px;
+    margin: 0 0 5em 0;
     padding: 0px;
     height: 100%;
     width: 100%;
-    background: url(../../../../WavesTop.svg) #eff1f5;
-    background-repeat: no-repeat;}
+    background: url(../../../../waveTop.svg) top no-repeat, url(../../../../waveBot.svg) bottom no-repeat, #eff1f5;
+    background-repeat: no-repeat;
+}
 #main {
     margin: 0 12%;
 }
+/*                              TITLES                          */
 h1 {
+    font-family: "montSerrat", serif ;
     margin: 3em 0 0 0;
     font-size: 4em;
 }
@@ -26,6 +29,7 @@ h3 {
 h4 {
     color: #6C63FF;
 }
+/*                              BALISES                             */
 a {
     text-decoration: none;
     color: black;
@@ -33,10 +37,11 @@ a {
 ul {
     list-style-type: none;
 }
-.toCome {
-    text-decoration: line-through;
+/*                              CLASSES                             */
+.toCome {// Languages and tools not learned yet
+    opacity: .5;
 }
-.underTitle {
+.underTitle {// Specific white intro under H1
     color: white;
     font-weight: bold;
 }
