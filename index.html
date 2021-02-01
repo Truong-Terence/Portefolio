@@ -9,6 +9,7 @@
 <body> 
                 <!-- TODO:
                     * Find fonts
+                    * H1 color
                     * CSS background "wavy" 100% width body
                     * HOME CV CONTACT > Hover
                     * LET'S TALK Button > scroll + Hover opacity
@@ -20,180 +21,189 @@
                     * Responsive - mediaQ
                     * Add max-width and max-height to images
                  -->
-    <div id="main">
-        <header>
-        </header>
-        <section id="welcome" class="section">
-            <nav>
-                <div><a href="#contact">Contact</a></div>
-                <div><a href="./projects.html">Projects</a></div>
-                <div><a href="./index.html">Home</a></div>
-            </nav>
-            <div class="center">
-                <h1>Junior developer</h1>
-                <p><span class="underTitle">Soon to be fullstack developer !</span></p>
-                <button class="button center">LET'S TALK</button>
+<div class="container">
+    <div class="row">
+        <nav class="col navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./matete.jpg" width="40" height="30" alt="Site logo">
+                Térence Truong
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projects.html">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cv.html">cv</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
             </div>
-            
-        </section>
-
-        <section class="section center" id="presentation">
-            <div class="title">
-                <h2>Who ?</h2>
-            </div>
-            <div id="description">
-                <div>
-                    <h3>Hi I'm Térence.</h3>
-                    <p>Since January 2020, I have taking courses to become a fullstack developer, mainly on <a href="https://openclassrooms.com" target="_blank">OpenClassRooms</a>. <br>
-                        In April 2021, I'll be following a graduated training (BAC+2) at <a href="https://www.arinfo.fr" target="_blank">Arinfo</a> to become a fullstack developer.
-                    </p>
-                </div>
-                <div class="skills">
-                    <div class="flexSkills frontEnd">
-                        <div class="svgSkills"><img src="./assets/img/skills/ux.svg" alt=""></div>
-                        <div><h3>Front-End</h3><p>Balbalbla</p></div>
-                        <div><h4>Languages</h4><p>Javascript, HTML5, CSS3, Sass, Markdown</p></div>
-                        <div><h4>Tools</h4>
-                            <div class="ulDouble">
-                                <ul>
-                                    <li class="toCome">Bootstrap 4</li>
-                                    <li class="toCome">WordPress 5</li>
-                                    <li>.</li>
-                                    <li>.</li>
-                                </ul>
-                                <ul>
-                                    <li class="toCome">Jquery
-                                    <li>.</li>
-                                    <li>.</li>
-                                    <li>.</li>
-                                </ul>
-                            </div>
-                        </div>
-    
-                    </div>
-                    <div class="flexSkills backEnd">
-                        <div class="svgSkills"><img src="./assets/img/skills/server.svg" alt=""></div>
-                        <div><h3>Back-End</h3><p>Balbalbla</p></div>
-                        <div><h4>Languages</h4><p>Javascript, <span class="toCome">PHP</span>,</p></div>
-                        <div><h4>Tools</h4>
-                            <div class="ulDouble">
-                                <ul>
-                                    <li class="toCome">Vue.js</li>
-                                    <li class="toCome">API REST</li>
-                                    <li class="toCome">MySQL</li>
-                                    <li class="toCome">OWASP</li>
-                                </ul>
-                                <ul>
-                                    <li class="toCome">Node.js</li>
-                                    <li class="toCome">Express</li>
-                                    <li class="toCome">MangoDB</li>
-                                    <li class="toCome">SEO</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flexSkills developer">
-                        <div class="svgSkills"><img src="./assets/img/skills/dev.svg" alt=""></div>
-                        <div><h3>Programer</h3><p>Balbalbla</p></div>
-                        <div><h4>Languages</h4><p>Python, <span class="toCome">Java</span>, <span class="toCome">C</span>, <span class="toCome">C++</span></p>
-                        </div>
-                        <div><h4>Tools</h4>
-                            <div class="ulDouble">
-                                <ul>
-                                    <li>Git</li>
-                                    <li class="toCome">Symfony</li>
-                                    <li>.</li>
-                                    <li>.</li>
-                                </ul>
-                                <ul>
-                                    <li class="toCome">Unreal Engine 4</li>
-                                    <li>.</li>
-                                    <li>.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="section center" id="projects">
-            <div class="title">
-                <h2>My latest projects</h2>
-            </div>
-            <div class="projects">
-
-                <div class="gridProjects">
-                    <div class="svgProject svgProject--left project_1">
-                        <img src="./assets/img/projects/wheel.svg" alt="">
-                    </div>
-                    <div class="textProject">
-                        <div><h3>The wheel <br> <em>HTML, CSS</em></h3></div>
-                        <div>
-                            <p>A wheel of fortune made in order to decide a theme for the new year.</p>
-                            <p>/!\WITH NOISE/!\</p>
-                        </div>
-                        <div><button class="button center project_1">VIEW PROJECT</button></div>
-                    </div>
-                </div>
-
-                <div class="gridProjects">
-                    <div class="textProject">
-                        <div><h3>The hangman <br> <em>Python</em></h3></div>
-                        <div>
-                            <p>A simple hangman</p>
-                            <p></p>
-                        </div>
-                        <div><button class="button center project_2">VIEW PROJECT</button></div>
-                </div>
-                <div class="svgProject svgProject--right project_2">
-                    <img src="./assets/img/projects/hangMan.svg" alt="">
-                </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="section center" id="contact">
-            <div class="title">
-                <h2>Work with me</h2>
-            </div>
-            <div class="textContact">
-                <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form.</p>
-            </div>
-            <button class="button center">LET'S TALK</button>
-            <div class="networks">
-                <div><a href="https://www.linkedin.com/in/térence-renard-truong-van-nga-7b481619a/" target="_blank"><img src="./assets/img/reseaux/linkedin.svg" alt=""></a></div>
-                <div><a href="https://github.com/Truong-Terence" target="_blank"><img src="./assets/img/reseaux/github.svg" alt=""></a></div>
-            </div>
-
-        </section>
-
-
-        <!-- 
-        <div class="grid">
-            
-            <section class="index">
-                <p>section index</p>
-            </section>
-            <section class="cv">
-                <p>section CV</p>
-            </section>
-            <section class="projets">
-                <p>section projets</p>
-            </section>
-            <section class="outils">
-                <p>section outils</p>
-            </section>
-            <section class="sites">
-                <p>section sites</p>
-            </section>
-        </div>
-        <section>
-            <p>la suite ici</p>
-        </section> -->
-        <script src="./js/main.js"></script>
+        </nav>
     </div>
+
+    <section id="welcome" class="section">
+
+        
+
+        <div class="row justify-content-center">
+            <div class="col-xs-7 col-centered text-center">
+                <h1>Junior developer</h1>
+                <p><span>Soon to be fullstack developer !</span></p>
+                <button class="btn btn-contact py-2 px-5">LET'S TALK</button>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section class="section text-center" id="presentation">
+        <div class="title">
+            <h2>Who ?</h2>
+        </div>
+        <div id="description">
+            <div>
+                <h3>Hi I'm Térence.</h3>
+                <p>Since January 2020, I have taking courses to become a fullstack developer, mainly on <a href="https://openclassrooms.com" target="_blank">OpenClassRooms</a>. <br>
+                    In April 2021, I'll be following a graduated training (BAC+2) at <a href="https://www.arinfo.fr" target="_blank">Arinfo</a> to become a fullstack developer.
+                </p>
+            </div>
+            <div class="skills">
+                <div class="flexSkills frontEnd">
+                    <div class="svgSkills"><img src="./assets/img/skills/ux.svg" alt=""></div>
+                    <div><h3>Front-End</h3><p>Balbalbla</p></div>
+                    <div><h4>Languages</h4><p>Javascript, HTML5, CSS3, Sass, Markdown</p></div>
+                    <div><h4>Tools</h4>
+                        <div class="ulDouble">
+                            <ul>
+                                <li class="toCome">Bootstrap 4</li>
+                                <li class="toCome">WordPress 5</li>
+                                <li>.</li>
+                                <li>.</li>
+                            </ul>
+                            <ul>
+                                <li class="toCome">Jquery
+                                <li>.</li>
+                                <li>.</li>
+                                <li>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flexSkills backEnd">
+                    <div class="svgSkills"><img src="./assets/img/skills/server.svg" alt=""></div>
+                    <div><h3>Back-End</h3><p>Balbalbla</p></div>
+                    <div><h4>Languages</h4><p>Javascript, <span class="toCome">PHP</span>,</p></div>
+                    <div><h4>Tools</h4>
+                        <div class="ulDouble">
+                            <ul>
+                                <li class="toCome">Vue.js</li>
+                                <li class="toCome">API REST</li>
+                                <li class="toCome">MySQL</li>
+                                <li class="toCome">OWASP</li>
+                            </ul>
+                            <ul>
+                                <li class="toCome">Node.js</li>
+                                <li class="toCome">Express</li>
+                                <li class="toCome">MangoDB</li>
+                                <li class="toCome">SEO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexSkills developer">
+                    <div class="svgSkills"><img src="./assets/img/skills/dev.svg" alt=""></div>
+                    <div><h3>Programer</h3><p>Balbalbla</p></div>
+                    <div><h4>Languages</h4><p>Python, <span class="toCome">Java</span>, <span class="toCome">C</span>, <span class="toCome">C++</span></p>
+                    </div>
+                    <div><h4>Tools</h4>
+                        <div class="ulDouble">
+                            <ul>
+                                <li>Git</li>
+                                <li class="toCome">Symfony</li>
+                                <li>.</li>
+                                <li>.</li>
+                            </ul>
+                            <ul>
+                                <li class="toCome">Unreal Engine 4</li>
+                                <li>.</li>
+                                <li>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section text-center" id="projects">
+        <div class="title">
+            <h2>My latest projects</h2>
+        </div>
+        <div class="projects">
+
+            <div class="gridProjects">
+                <div class="svgProject svgProject--left project_1">
+                    <img src="./assets/img/projects/wheel.svg" alt="">
+                </div>
+                <div class="textProject">
+                    <div><h3>The wheel <br> <em>HTML, CSS</em></h3></div>
+                    <div>
+                        <p>A wheel of fortune made in order to decide a theme for the new year.</p>
+                        <p>/!\WITH NOISE/!\</p>
+                    </div>
+                    <div><button class="btn py-2 px-5 text-center project_1">VIEW PROJECT</button></div>
+                </div>
+            </div>
+
+            <div class="gridProjects">
+                <div class="textProject">
+                    <div><h3>The hangman <br> <em>Python</em></h3></div>
+                    <div>
+                        <p>A simple hangman</p>
+                        <p></p>
+                    </div>
+                    <div><button class="btn py-2 px-5 text-center project_2">VIEW PROJECT</button></div>
+            </div>
+            <div class="svgProject svgProject--right project_2">
+                <img src="./assets/img/projects/hangMan.svg" alt="">
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section text-center" id="contact">
+        <div class="title">
+            <h2>Work with me</h2>
+        </div>
+        <div class="textContact">
+            <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form.</p>
+        </div>
+        <button class="btn text-center">LET'S TALK</button>
+        <div class="networks">
+            <div><a href="https://www.linkedin.com/in/térence-renard-truong-van-nga-7b481619a/" target="_blank"><img src="./assets/img/reseaux/linkedin.svg" alt=""></a></div>
+            <div><a href="https://github.com/Truong-Terence" target="_blank"><img src="./assets/img/reseaux/github.svg" alt=""></a></div>
+        </div>
+
+    </section>
+</div>    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="./js/main.js"></script>
 </body>
 </html>

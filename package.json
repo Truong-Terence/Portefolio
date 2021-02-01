@@ -1,14 +1,22 @@
 {
   "name": "portefolio",
   "version": "1.0.0",
+  "description": "[CONTACT](lien \"Join me\") [CV](pdf)\r # Junior developer\r ![Logo](./styles/assets/img/activity.svg)\r Soon to be fullstack developer !\r [LET'S TALK](lien \"Join me\")",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./assets/styles/sass/main.scss:./assets/styles/css/style.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Truong-Terence/Portefolio.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/Truong-Terence/Portefolio/issues"
+  },
+  "homepage": "https://github.com/Truong-Terence/Portefolio#readme",
   "dependencies": {
-    "sass": "^1.32.5"
+    "bootstrap": "^4.6.0"
   }
 }

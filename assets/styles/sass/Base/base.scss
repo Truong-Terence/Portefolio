@@ -3,32 +3,12 @@ html body{
     padding: 0px;
     height: 100%;
     width: 100%;
-    background: url(../../../../waveTop.svg) top no-repeat, url(../../../../waveBot.svg) bottom no-repeat, #eff1f5;
+    background: url(../../../../waveTop.svg) top no-repeat, url(../../../../waveBot.svg) bottom no-repeat;
     background-repeat: no-repeat;
-}
-#main {
-    margin: 0 12%;
+    background-color: $body-color;
 }
 /*                              TITLES                          */
-h1 {
-    font-family: "montSerrat", serif ;
-    margin: 3em 0 0 0;
-    font-size: 4em;
-}
 
-h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 3em;
-}
-h3 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.5em;
-}
-h4 {
-    color: #6C63FF;
-}
 /*                              BALISES                             */
 a {
     text-decoration: none;
@@ -40,8 +20,4 @@ ul {
 /*                              CLASSES                             */
 .toCome {// Languages and tools not learned yet
     opacity: .5;
-}
-.underTitle {// Specific white intro under H1
-    color: white;
-    font-weight: bold;
 }
