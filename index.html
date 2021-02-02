@@ -10,81 +10,90 @@
 
                                 <!----------------------------------ALERTS------------------------------------------>
 
-    <div id="alert" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; width: 100%; z-index: 9999;">
-        <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
-        <button id="closePop" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
-            <span aria-hidden="true">×</span>
-        </button>  
-    </div>
-    <div id="alert2" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
-        <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
-        <button id="closePop2" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
-            <span aria-hidden="true">×</span>
-        </button>
-    </div>
+<div id="alert" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; width: 100%; z-index: 9999;">
+    <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
+    <button id="closePop" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
+        <span aria-hidden="true">×</span>
+    </button>  
+</div>
+<div id="alert2" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+    <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
+    <button id="closePop2" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
+        <span aria-hidden="true">×</span>
+    </button>
+</div>
                 <!-- TODO:
                     * Find fonts
                     * H1 color
-                    * CSS background "wavy" 100% width body
-                    * HOME CV CONTACT > Hover
-                    * LET'S TALK Button > scroll + Hover opacity
-                    * VIEW PROJECT Button > Hover opacity
+                    * CSS background responsive
+                    * Navbar button cleaner
+                    * LET'S TALK Button > scroll animation
                     * animations particuless ? on "Who ?"
                     * Reload page where the user were
-                    * Add docu
+                    * Add documentation
                     * README.md
-                    * Responsive - mediaQ
-                    * Add max-width and max-height to images
+                    * Responsive - mediaQ - breackpoints
                     * Carousel for skills > CV + mooc + certifs
+                    * Carousel for projects
                     * Network in bubbles
-                    - btn > color of the project
+                    * spinner scrollspy
+                    * gradient bouttons
                  -->
 
                                 <!--                                NAVBAR                                        -->
-
-<div class="container px-5">
+<div class="app">
+<div class="container-fluid px-0">
     <header>
-        <div class="row">
-            <nav class="col navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./matete.png" width="60" height="70" alt="Site logo">
-                    Térence Truong
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./projects.html">projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="container">
+            <div class="row">
+                <nav class="col navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./matete.png" width="60" height="70" alt="Site logo">
+                        Térence Truong
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./projects.html">projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
-                                <!----------------------------------WELCOME------------------------------------------>
+                                    <!----------------------------------WELCOME------------------------------------------>
 
-    <section>
+    <section class="home-hero">
+        <div class="hero-bg">
+            <div class="hero-pattern-bg">
+                <img class="hero-pattern-img__default" src="./assets/img/WavesMiddle.png" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
         <div class="row  py-5 my-5">
             <div class="col text-center">
-                <h1>Junior developer</h1>
-                <p><span>Soon to be fullstack developer !</span></p>
+                <h1 class="text-white">Junior developer</h1>
+                <p class="text-white">Soon to be fullstack developer !</p>
                 <button id="talkButton" class="btn btn-light py-3 px-5 rounded-pill">LET'S TALK</button>
             </div>
         </div>
     </section>
 
-                                <!----------------------------------INTRO------------------------------------------>
 
-    <section class="row justify-content-center">
+                                    <!----------------------------------INTRO------------------------------------------>
+    <div class="container">
+        <section class="row justify-content-center mt-5">
         <div class="col-xs-7 col-centered text-center  py-5 mt-5">
             <div class="title my-5"><h2>Who ?</h2></div>
             <div>
@@ -160,75 +169,76 @@
                             </ul>
                         </div>
                     </div>
-                    
-                </div>
+                
             </div>
-
         </div>
 
+    </div>
     </section>
 
                                     <!----------------------------------PROJECTS------------------------------------------>
 
     <section class="row justify-content-center">
-        <div class="col-xs-7 col-centered text-center py-5 my-5">
-            <div class="title">
-                <h2>My latest projects</h2>
+    <div class="col-xs-7 col-centered text-center py-5 my-5">
+        <div class="title">
+            <h2>My latest projects</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row shadow-sm mb-5 bg-white rounded">
+            <div class="d-none d-md-block col-md-6 px-0">
+                <img src="./assets/img/projects/wheel.svg" alt="" class="rounded-left img-fluid bg-success">
+            </div>
+            <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center py-3 py-md-0">
+                <div><h3>The wheel <br> <em>HTML, CSS</em></h3></div>
+                <div class="d-none d-md-block">
+                    <p>A wheel of fortune. /!\WITH NOISE/!\</p>
+                </div>
+                <div><button class="btn bg-success py-2 px-5 rounded-pill">VIEW PROJECT</button></div>
             </div>
         </div>
-
-        <div class="container-fluid">
-            <div class="row shadow-sm mb-5 bg-white rounded">
-                <div class="d-none d-md-block col-md-6 px-0">
-                    <img src="./assets/img/projects/wheel.svg" alt="" class="rounded-left img-fluid bg-success">
-                </div>
-                <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center">
-                    <div><h3>The wheel <br> <em>HTML, CSS</em></h3></div>
-                    <div>
-                        <p>A wheel of fortune. /!\WITH NOISE/!\</p>
-                    </div>
-                    <div><button class="btn bg-success py-2 px-5 rounded-pill">VIEW PROJECT</button></div>
-                </div>
-            </div>
         
 
-            <div class="row shadow-sm mb-5 bg-white rounded">
-                <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center">
-                    <div><h3>The hangman <br> <em>Python</em></h3></div>
-                    <div>
-                        <p>A simple hangman</p>
-                        <p></p>
-                    </div>
-                    <div><button class="btn bg-info py-2 px-5 rounded-pill">VIEW PROJECT</button></div>
+        <div class="row shadow-sm mb-5 bg-white rounded">
+            <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center py-3 py-md-0">
+                <div><h3>The hangman <br> <em>Python</em></h3></div>
+                <div class="d-none d-md-block">
+                    <p>A simple hangman</p>
+                    <p></p>
                 </div>
-                <div class="d-none d-md-block col-md-6 px-0">
-                    <div class="test"></div>
-                    <img src="./assets/img/projects/hangMan-resized.svg" alt=""class="rounded-right img-fluid bg-info">
-                </div>
+                <div><button class="btn bg-info py-2 px-5 rounded-pill">VIEW PROJECT</button></div>
+            </div>
+            <div class="d-none d-md-block col-md-6 px-0">
+                <div class="test"></div>
+                <img src="./assets/img/projects/hangMan-resized.svg" alt=""class="rounded-right img-fluid bg-info">
             </div>
         </div>
+    </div>
     </section>
 
                                     <!----------------------------------WORK WITH ME------------------------------------------>
 
-    <section class="row text-center">
-        <div class="col-12 title py-5 my-5">
-            <h2>Work with me</h2>
-        </div>
+    <footer class="row text-center">
+    <div class="col-12 title py-5 my-5">
+        <h2>Work with me</h2>
+    </div>
 
-        <div class="col-12">
-            <button id="talkButton2" class="btn btn-light py-2 px-5 rounded-pill">LET'S TALK</button>
-        </div>
-        
-        <div class="col-12 d-flex justify-content-center align-items-center my-4">
-            <div><a href="https://www.linkedin.com/in/térence-renard-truong-van-nga-7b481619a/" target="_blank"><img src="./assets/img/reseaux/linkedin.svg" alt="" class="mx-5 py-3 px-3 bg-white rounded-circle "></a></div>
-            <div><a href="https://github.com/Truong-Terence" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" class="mx-5 py-3 px-3 bg-white rounded-circle"></a></div>
-        </div>
-    </section>
+    <div class="col-12">
+        <button id="talkButton2" class="btn btn-light py-2 px-5 rounded-pill">LET'S TALK</button>
+    </div>
+    
+    <div class="col-12 d-flex justify-content-center align-items-center my-4">
+        <div><a href="https://www.linkedin.com/in/térence-renard-truong-van-nga-7b481619a/" target="_blank"><img src="./assets/img/reseaux/linkedin.svg" alt="" class="mx-5 py-3 px-3 bg-white rounded-circle "></a></div>
+        <div><a href="https://github.com/Truong-Terence" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" class="mx-5 py-3 px-3 bg-white rounded-circle"></a></div>
+    </div>
+    </footer>
+    </div>
+</div>
+</div>
 
                                 <!----------------------------------SCRIPTS------------------------------------------>
 
-</div>    
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -236,5 +246,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <script src="./assets/js/main.js"></script>
+
 </body>
 </html>

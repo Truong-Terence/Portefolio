@@ -1,0 +1,31 @@
+                //      HERO        //
+@media (min-width: 768px) {
+    section.home-hero {
+        height: 492px;
+    }
+}
+
+@media (min-width: 992px) {
+    section.home-hero {
+        height: 610px;
+    }
+}
+
+@media (min-width: 1200px) {
+    section.home-hero {
+        height: 720px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .hero-pattern-bg {
+        width: 1440px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-pattern-bg {
+        width: 1920px;
+    }
+}
