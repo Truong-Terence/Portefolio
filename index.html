@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css">
     <title>Térence Renard Truong</title>
 </head>
-<body> 
+<body>
+    <div id="alert" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; width: 100%; z-index: 9999;">
+        <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
+        <button id="closePop" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
+            <span aria-hidden="true">×</span>
+        </button>  
+    </div>
                 <!-- TODO:
                     * Find fonts
                     * H1 color
@@ -20,183 +26,200 @@
                     * README.md
                     * Responsive - mediaQ
                     * Add max-width and max-height to images
+                    * Carousel for skills > CV + mooc + certifs
+                    * Network in bubbles
+                    - btn > color of the project
                  -->
-<div class="container">
-    <div class="row">
-        <nav class="col navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./matete.jpg" width="40" height="30" alt="Site logo">
-                Térence Truong
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./projects.html">projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./cv.html">cv</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<div class="container px-5">
+    <header>
+        <div class="row">
+            <nav class="col navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./matete.png" width="60" height="70" alt="Site logo">
+                    Térence Truong
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./projects.html">projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <section id="welcome" class="section">
-
-        
-
-        <div class="row justify-content-center">
-            <div class="col-xs-7 col-centered text-center">
+    <section>
+        <div class="row">
+            <div class="col text-center">
                 <h1>Junior developer</h1>
                 <p><span>Soon to be fullstack developer !</span></p>
-                <button class="btn btn-contact py-2 px-5">LET'S TALK</button>
+                <button id="talkButton" class="btn btn-light py-3 px-5 rounded-pill">LET'S TALK</button>
             </div>
         </div>
-        
-        
     </section>
 
-    <section class="section text-center" id="presentation">
-        <div class="title">
-            <h2>Who ?</h2>
-        </div>
-        <div id="description">
+    <section class="row justify-content-center">
+        <div class="col-xs-7 col-centered text-center">
+            <div class="title my-5"><h2>Who ?</h2></div>
             <div>
                 <h3>Hi I'm Térence.</h3>
-                <p>Since January 2020, I have taking courses to become a fullstack developer, mainly on <a href="https://openclassrooms.com" target="_blank">OpenClassRooms</a>. <br>
-                    In April 2021, I'll be following a graduated training (BAC+2) at <a href="https://www.arinfo.fr" target="_blank">Arinfo</a> to become a fullstack developer.
+                <p>
+                    Since January 2020, I have taking courses to become a fullstack developer, mainly on <a href="https://openclassrooms.com" target="_blank" class="text-decoration-none">OpenClassRooms</a>. <br>
+                    In April 2021, I'll be following a graduated training (BAC+2) at <a href="https://www.arinfo.fr" target="_blank" class="text-decoration-none">Arinfo</a> to become a fullstack developer.
                 </p>
             </div>
-            <div class="skills">
-                <div class="flexSkills frontEnd">
-                    <div class="svgSkills"><img src="./assets/img/skills/ux.svg" alt=""></div>
-                    <div><h3>Front-End</h3><p>Balbalbla</p></div>
-                    <div><h4>Languages</h4><p>Javascript, HTML5, CSS3, Sass, Markdown</p></div>
-                    <div><h4>Tools</h4>
-                        <div class="ulDouble">
-                            <ul>
-                                <li class="toCome">Bootstrap 4</li>
-                                <li class="toCome">WordPress 5</li>
-                                <li>.</li>
-                                <li>.</li>
-                            </ul>
-                            <ul>
-                                <li class="toCome">Jquery
-                                <li>.</li>
-                                <li>.</li>
-                                <li>.</li>
-                            </ul>
-                        </div>
-                    </div>
+        </div>
+        
 
-                </div>
-                <div class="flexSkills backEnd">
-                    <div class="svgSkills"><img src="./assets/img/skills/server.svg" alt=""></div>
-                    <div><h3>Back-End</h3><p>Balbalbla</p></div>
-                    <div><h4>Languages</h4><p>Javascript, <span class="toCome">PHP</span>,</p></div>
-                    <div><h4>Tools</h4>
-                        <div class="ulDouble">
-                            <ul>
-                                <li class="toCome">Vue.js</li>
-                                <li class="toCome">API REST</li>
-                                <li class="toCome">MySQL</li>
-                                <li class="toCome">OWASP</li>
+        <div class="row shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="col col-centered text-center">
+                <div><img src="./assets/img/skills/ux.svg" alt="" height="100" width="150"></div>
+                <div><h3>Front-End</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi tenetur laboriosam veniam omnis? Amet, accusamus cupiditate adipisci vero ut veniam illum deleniti dicta nostrum saepe exercitationem tempore dolorum quasi.</p></div>
+                <div><h4>Languages</h4><p>Javascript, HTML5, CSS3, Sass, Markdown</p></div>
+                <div><h4>Tools</h4>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="col">
+                                <li class="toCome list-unstyled">Bootstrap 4</li>
+                                <li class="toCome list-unstyled">WordPress 5</li>
                             </ul>
-                            <ul>
-                                <li class="toCome">Node.js</li>
-                                <li class="toCome">Express</li>
-                                <li class="toCome">MangoDB</li>
-                                <li class="toCome">SEO</li>
+                            <ul class="col">
+                                <li class="toCome list-unstyled">Jquery
                             </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="flexSkills developer">
-                    <div class="svgSkills"><img src="./assets/img/skills/dev.svg" alt=""></div>
-                    <div><h3>Programer</h3><p>Balbalbla</p></div>
-                    <div><h4>Languages</h4><p>Python, <span class="toCome">Java</span>, <span class="toCome">C</span>, <span class="toCome">C++</span></p>
-                    </div>
-                    <div><h4>Tools</h4>
-                        <div class="ulDouble">
-                            <ul>
-                                <li>Git</li>
-                                <li class="toCome">Symfony</li>
-                                <li>.</li>
-                                <li>.</li>
-                            </ul>
-                            <ul>
-                                <li class="toCome">Unreal Engine 4</li>
-                                <li>.</li>
-                                <li>.</li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
             </div>
+
+            <div class="col col-centered text-center">
+                <div><img src="./assets/img/skills/server.svg" alt="" height="100" width="150"></div>
+                <div><h3>Back-End</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque exercitationem sequi fuga vel numquam facere, corporis officia magni facilis eius sed animi, beatae nam corrupti nihil aspernatur. Tenetur, incidunt.</p></div>
+                <div><h4>Languages</h4><p>Javascript, <span class="toCome">PHP</span>,</p></div>
+                <div><h4>Tools</h4>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="col">
+                                <li class="toCome list-unstyled">Vue.js</li>
+                                <li class="toCome list-unstyled">API REST</li>
+                                <li class="toCome list-unstyled">MySQL</li>
+                                <li class="toCome list-unstyled">OWASP</li>
+                            </ul>
+                            <ul class="col">
+                                <li class="toCome list-unstyled">Node.js</li>
+                                <li class="toCome list-unstyled">Express</li>
+                                <li class="toCome list-unstyled">MangoDB</li>
+                                <li class="toCome list-unstyled">SEO</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col col-centered text-center">
+                <div class=><img src="./assets/img/skills/dev.svg" alt="" height="100" width="150"></div>
+                <div><h3>More</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolor dolorem harum expedita repellendus aperiam, quibusdam eligendi labore earum delectus at saepe culpa adipisci et eum iure reiciendis reprehenderit optio?</p></div>
+                <div><h4>Languages</h4><p>Python, <span class="toCome">Java</span>, <span class="toCome">C</span>, <span class="toCome">C++</span></p>
+                </div>
+                <div><h4>Tools</h4>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="col">
+                                <li class="list-unstyled">Git</li>
+                                <li class="toCome list-unstyled">Symfony</li>
+                                <li class="toCome list-unstyled">.</li>
+                                <li class="toCome list-unstyled">.</li>
+                            </ul>
+                            <ul class="col">
+                                <li class="toCome list-unstyled">Unreal Engine 4</li>
+                                <li class="toCome list-unstyled">.</li>
+                                <li class="toCome list-unstyled">.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
+
 
     </section>
 
-    <section class="section text-center" id="projects">
-        <div class="title">
-            <h2>My latest projects</h2>
+
+    <section class="row justify-content-center">
+        <div class="col-xs-7 col-centered text-center">
+            <div class="title">
+                <h2>My latest projects</h2>
+            </div>
         </div>
-        <div class="projects">
 
-            <div class="gridProjects">
-                <div class="svgProject svgProject--left project_1">
-                    <img src="./assets/img/projects/wheel.svg" alt="">
+        <div class="row shadow-sm mb-5 bg-white rounded">
+            <div class="col px-0">
+                <img src="./assets/img/projects/wheel.svg" alt="" class="rounded-left img-fluid bg-success">
+            </div>
+            <div class="col text-center">
+                <div><h3>The wheel <br> <em>HTML, CSS</em></h3></div>
+                <div>
+                    <p>A wheel of fortune made in order to decide a theme for the new year.</p>
+                    <p>/!\WITH NOISE/!\</p>
                 </div>
-                <div class="textProject">
-                    <div><h3>The wheel <br> <em>HTML, CSS</em></h3></div>
-                    <div>
-                        <p>A wheel of fortune made in order to decide a theme for the new year.</p>
-                        <p>/!\WITH NOISE/!\</p>
-                    </div>
-                    <div><button class="btn py-2 px-5 text-center project_1">VIEW PROJECT</button></div>
-                </div>
+                <div><button class="btn bg-success py-2 px-5  rounded-pill">VIEW PROJECT</button></div>
             </div>
-
-            <div class="gridProjects">
-                <div class="textProject">
-                    <div><h3>The hangman <br> <em>Python</em></h3></div>
-                    <div>
-                        <p>A simple hangman</p>
-                        <p></p>
-                    </div>
-                    <div><button class="btn py-2 px-5 text-center project_2">VIEW PROJECT</button></div>
-            </div>
-            <div class="svgProject svgProject--right project_2">
-                <img src="./assets/img/projects/hangMan.svg" alt="">
-            </div>
-            </div>
-
         </div>
+
+        <div class="row shadow-sm mb-5 bg-white rounded">
+            <div class="col text-center">
+                <div><h3>The hangman <br> <em>Python</em></h3></div>
+                <div>
+                    <p>A simple hangman</p>
+                    <p></p>
+                </div>
+                <div><button class="btn bg-info py-2 px-5  rounded-pill">VIEW PROJECT</button></div>
+            </div>
+            <div class="col px-0">
+                <div class="test"></div>
+                <img src="./assets/img/projects/hangMan.svg" alt=""class="rounded-right img-fluid bg-info">
+            </div>
+        </div>
+    
+
+        
+        
     </section>
 
-    <section class="section text-center" id="contact">
-        <div class="title">
+
+    <section class="row text-center">
+        <div class="col-12 title py-5">
             <h2>Work with me</h2>
         </div>
-        <div class="textContact">
-            <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form.</p>
-        </div>
-        <button class="btn text-center">LET'S TALK</button>
-        <div class="networks">
-            <div><a href="https://www.linkedin.com/in/térence-renard-truong-van-nga-7b481619a/" target="_blank"><img src="./assets/img/reseaux/linkedin.svg" alt=""></a></div>
-            <div><a href="https://github.com/Truong-Terence" target="_blank"><img src="./assets/img/reseaux/github.svg" alt=""></a></div>
-        </div>
 
+        <div class="col-12">
+            <div id="alert2" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+                <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
+                <button id="closePop2" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <button id="talkButton2" class="btn btn-light py-2 px-5 rounded-pill">LET'S TALK</button>
+        </div>
+        
+        <div class="col-12 d-flex justify-content-center align-items-center my-4">
+            <div><a href="https://www.linkedin.com/in/térence-renard-truong-van-nga-7b481619a/" target="_blank"><img src="./assets/img/reseaux/linkedin.svg" alt="" class="mx-5 py-3 px-3 bg-white rounded-circle "></a></div>
+            <div><a href="https://github.com/Truong-Terence" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" class="mx-5 py-3 px-3 bg-white rounded-circle"></a></div>
+        </div>
     </section>
+
 </div>    
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
@@ -204,6 +227,6 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<script src="./js/main.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -18,15 +18,12 @@ html body {
   background-color: #eff1f5;
 }
 
-/*                              TITLES                          */
-/*                              BALISES                             */
-a {
-  text-decoration: none;
-  color: black;
-}
-
-ul {
-  list-style-type: none;
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 20px 15px 0px 15px;
+  font-size: 0.8em;
 }
 
 /*                              CLASSES                             */
@@ -36,87 +33,33 @@ ul {
 
 /*
 /** GRID for my skills
-*/
+
 .skills {
-  display: grid;
-  width: auto;
-  height: 40em;
-  grid-template-columns: 1fr 1fr 1fr;
-  position: relative;
-  left: 2.5%;
-  border-radius: 20px;
-  background: white;
-  box-shadow: 0 0 0 1px #e5ebf7;
-  color: #141c3a;
-}
-.skills .ulDouble {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.skills ul {
-  display: flex;
-  flex-flow: column wrap;
-}
-.skills ul li {
-  font-size: 0.8em;
-}
-
-.flexSkills {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
+    display: grid;
+    width: auto;
+    height: 40em;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: 2.5%;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 0 1px #e5ebf7;
+    color: #141c3a;
+    .ulDouble {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    ul {
+        display: flex;
+        flex-flow: column wrap;
+        li {
+            font-size: .8em;
+        }
+    }
 }
 
-/*.frontEnd {
 
-}*/
-.backEnd {
-  box-shadow: 0 0 0 1px #e5ebf7;
-}
-
-/*.developer {
-}*/
-/**
- * GRID for my projects
- */
-.projects {
-  margin-top: 4em;
-  display: grid;
-  width: auto;
-  grid-template-rows: 30em 30em;
-  gap: 2em;
-  color: #141c3a;
-}
-
-.gridProjects {
-  display: grid;
-  width: auto;
-  grid-template-columns: 1fr 1fr;
-  border-radius: 15px;
-  background: white;
-  box-shadow: 0 0 0 1px #e5ebf7;
-}
-
-/**
- * GRID for contact me
- */
-.networks {
-  margin: 5em 0 0 0;
-  display: flex;
-  justify-content: center;
-}
-.networks div {
-  margin: 0 30px 0 30px;
-  background: white;
-  height: 3em;
-  width: 3em;
-  border-radius: 50%;
-}
-.networks div img {
-  position: relative;
-  top: 10px;
-}
-
+*/
 .title:after {
   width: 50px;
   height: 4px;
@@ -128,92 +71,11 @@ ul {
   transform: translateX(-80%);
 }
 
+/*
 .btn-contact {
-  background-color: #2c3e50 !important;
+    background-color: $btn-color-contact !important;
 }
-
-.section {
-  padding-top: 15em;
-  height: 60em;
-  border: 1px solid transparent;
-}
-
-#welcome {
-  padding-top: inherit;
-}
-
-#presentation {
-  padding-top: inherit;
-}
-
-#description {
-  margin: 4em 0 0 0;
-  padding: 0;
-  height: auto;
-  width: 100%;
-  border: 1px solid transparent;
-  font-size: 1.3em;
-}
-
-.svgSkills img {
-  height: 100px;
-  width: 150px;
-}
-
-#projects {
-  margin-bottom: 5em;
-}
-
-.textProject {
-  display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
-  width: 60%;
-  justify-self: center;
-}
-.textProject h3 {
-  font-size: 2em;
-  margin-top: 3em;
-}
-.textProject em {
-  font-size: 0.5em;
-}
-.textProject button {
-  margin: auto;
-}
-
-.svgProject--left {
-  border-radius: 15px 0 0 15px;
-}
-.svgProject--right {
-  border-radius: 0 15px 15px 0;
-}
-.svgProject img {
-  width: 100%;
-  height: 100%;
-}
-
-.project_1 {
-  background: #6ab04c;
-}
-.project_2 {
-  background: #e056fd;
-}
-
-#contact {
-  height: inherit;
-}
-#contact .textContact {
-  margin: 4em 0 1em 0;
-}
-
-.nav-link {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 20px 15px 0px 15px;
-  font-size: 0.8em;
-}
-
+*/
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -274,7 +136,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #eff1f5;
+  color: #212529;
   text-align: left;
   background-color: #fff;
 }
@@ -1861,7 +1723,7 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #eff1f5;
+  color: #212529;
 }
 .table th,
 .table td {
@@ -1906,7 +1768,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: #eff1f5;
+  color: #212529;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -2260,7 +2122,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: #eff1f5;
+  color: #212529;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2599,7 +2461,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #eff1f5;
+  color: #212529;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -2608,7 +2470,7 @@ textarea.form-control {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 30px;
+  border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2617,7 +2479,7 @@ textarea.form-control {
   }
 }
 .btn:hover {
-  color: #eff1f5;
+  color: #212529;
   text-decoration: none;
 }
 .btn:focus, .btn.focus {
@@ -3183,7 +3045,7 @@ input[type=button].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #eff1f5;
+  color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4205,7 +4067,7 @@ input[type=button].btn-block {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 30px;
+  border-radius: 0.25rem;
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
@@ -5209,7 +5071,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #f8f9fa;
 }
 .list-group-item-action:active {
-  color: #eff1f5;
+  color: #212529;
   background-color: #e9ecef;
 }
 
@@ -5991,7 +5853,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #eff1f5;
+  color: #212529;
 }
 
 .carousel {
@@ -10005,7 +9867,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-body {
-  color: #eff1f5 !important;
+  color: #212529 !important;
 }
 
 .text-muted {

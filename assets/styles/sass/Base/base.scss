@@ -5,18 +5,16 @@ html body{
     width: 100%;
     background: url(../../../../waveTop.svg) top no-repeat, url(../../../../waveBot.svg) bottom no-repeat;
     background-repeat: no-repeat;
-    background-color: $body-color;
+    background-color: #eff1f5;
 }
-/*                              TITLES                          */
+.nav-link { //Override Bs4
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px 15px 0px 15px;
+    font-size: .8em;
+}
 
-/*                              BALISES                             */
-a {
-    text-decoration: none;
-    color: black;
-}
-ul {
-    list-style-type: none;
-}
 /*                              CLASSES                             */
 .toCome {// Languages and tools not learned yet
     opacity: .5;
