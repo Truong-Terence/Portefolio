@@ -7,11 +7,20 @@
     <title>Térence Renard Truong</title>
 </head>
 <body>
+
+                                <!----------------------------------ALERTS------------------------------------------>
+
     <div id="alert" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; width: 100%; z-index: 9999;">
         <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
         <button id="closePop" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
             <span aria-hidden="true">×</span>
         </button>  
+    </div>
+    <div id="alert2" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+        <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
+        <button id="closePop2" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
+            <span aria-hidden="true">×</span>
+        </button>
     </div>
                 <!-- TODO:
                     * Find fonts
@@ -30,6 +39,9 @@
                     * Network in bubbles
                     - btn > color of the project
                  -->
+
+                                <!--                                NAVBAR                                        -->
+
 <div class="container px-5">
     <header>
         <div class="row">
@@ -58,8 +70,10 @@
         </div>
     </header>
 
+                                <!----------------------------------WELCOME------------------------------------------>
+
     <section>
-        <div class="row">
+        <div class="row  py-5 my-5">
             <div class="col text-center">
                 <h1>Junior developer</h1>
                 <p><span>Soon to be fullstack developer !</span></p>
@@ -68,8 +82,10 @@
         </div>
     </section>
 
+                                <!----------------------------------INTRO------------------------------------------>
+
     <section class="row justify-content-center">
-        <div class="col-xs-7 col-centered text-center">
+        <div class="col-xs-7 col-centered text-center  py-5 mt-5">
             <div class="title my-5"><h2>Who ?</h2></div>
             <div>
                 <h3>Hi I'm Térence.</h3>
@@ -80,9 +96,11 @@
             </div>
         </div>
         
+                                <!----------------------------------SKILLS------------------------------------------>
 
-        <div class="row shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="col col-centered text-center">
+        <div class="row shadow-sm px-0 mb-5 bg-white rounded">
+
+            <div class="col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 mb-2 mb-md-0">
                 <div><img src="./assets/img/skills/ux.svg" alt="" height="100" width="150"></div>
                 <div><h3>Front-End</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi tenetur laboriosam veniam omnis? Amet, accusamus cupiditate adipisci vero ut veniam illum deleniti dicta nostrum saepe exercitationem tempore dolorum quasi.</p></div>
                 <div><h4>Languages</h4><p>Javascript, HTML5, CSS3, Sass, Markdown</p></div>
@@ -97,12 +115,31 @@
                                 <li class="toCome list-unstyled">Jquery
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-            <div class="col col-centered text-center">
+            <div class="col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 my-2 my-md-0">
+                <div class=><img src="./assets/img/skills/dev.svg" alt="" height="100" width="150"></div>
+                <div><h3>More</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolor dolorem harum expedita repellendus aperiam, quibusdam eligendi labore earum delectus at saepe culpa adipisci et eum iure reiciendis reprehenderit optio?</p></div>
+                <div><h4>Languages</h4><p>Python, <span class="toCome">Java</span>, <span class="toCome">C</span>, <span class="toCome">C++</span></p>
+                </div>
+                <div><h4>Tools</h4>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="col">
+                                <li class="list-unstyled">Git</li>
+                                <li class="toCome list-unstyled">Symfony</li>
+                            </ul>
+                            <ul class="col">
+                                <li class="toCome list-unstyled">Unreal Engine 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 mt-2 mt-md-0">
                 <div><img src="./assets/img/skills/server.svg" alt="" height="100" width="150"></div>
                 <div><h3>Back-End</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque exercitationem sequi fuga vel numquam facere, corporis officia magni facilis eius sed animi, beatae nam corrupti nihil aspernatur. Tenetur, incidunt.</p></div>
                 <div><h4>Languages</h4><p>Javascript, <span class="toCome">PHP</span>,</p></div>
@@ -127,90 +164,59 @@
                 </div>
             </div>
 
-            <div class="col col-centered text-center">
-                <div class=><img src="./assets/img/skills/dev.svg" alt="" height="100" width="150"></div>
-                <div><h3>More</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolor dolorem harum expedita repellendus aperiam, quibusdam eligendi labore earum delectus at saepe culpa adipisci et eum iure reiciendis reprehenderit optio?</p></div>
-                <div><h4>Languages</h4><p>Python, <span class="toCome">Java</span>, <span class="toCome">C</span>, <span class="toCome">C++</span></p>
-                </div>
-                <div><h4>Tools</h4>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <ul class="col">
-                                <li class="list-unstyled">Git</li>
-                                <li class="toCome list-unstyled">Symfony</li>
-                                <li class="toCome list-unstyled">.</li>
-                                <li class="toCome list-unstyled">.</li>
-                            </ul>
-                            <ul class="col">
-                                <li class="toCome list-unstyled">Unreal Engine 4</li>
-                                <li class="toCome list-unstyled">.</li>
-                                <li class="toCome list-unstyled">.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
         </div>
-
 
     </section>
 
+                                    <!----------------------------------PROJECTS------------------------------------------>
 
     <section class="row justify-content-center">
-        <div class="col-xs-7 col-centered text-center">
+        <div class="col-xs-7 col-centered text-center py-5 my-5">
             <div class="title">
                 <h2>My latest projects</h2>
             </div>
         </div>
 
-        <div class="row shadow-sm mb-5 bg-white rounded">
-            <div class="col px-0">
-                <img src="./assets/img/projects/wheel.svg" alt="" class="rounded-left img-fluid bg-success">
-            </div>
-            <div class="col text-center">
-                <div><h3>The wheel <br> <em>HTML, CSS</em></h3></div>
-                <div>
-                    <p>A wheel of fortune made in order to decide a theme for the new year.</p>
-                    <p>/!\WITH NOISE/!\</p>
+        <div class="container-fluid">
+            <div class="row shadow-sm mb-5 bg-white rounded">
+                <div class="d-none d-md-block col-md-6 px-0">
+                    <img src="./assets/img/projects/wheel.svg" alt="" class="rounded-left img-fluid bg-success">
                 </div>
-                <div><button class="btn bg-success py-2 px-5  rounded-pill">VIEW PROJECT</button></div>
+                <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center">
+                    <div><h3>The wheel <br> <em>HTML, CSS</em></h3></div>
+                    <div>
+                        <p>A wheel of fortune. /!\WITH NOISE/!\</p>
+                    </div>
+                    <div><button class="btn bg-success py-2 px-5 rounded-pill">VIEW PROJECT</button></div>
+                </div>
+            </div>
+        
+
+            <div class="row shadow-sm mb-5 bg-white rounded">
+                <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center">
+                    <div><h3>The hangman <br> <em>Python</em></h3></div>
+                    <div>
+                        <p>A simple hangman</p>
+                        <p></p>
+                    </div>
+                    <div><button class="btn bg-info py-2 px-5 rounded-pill">VIEW PROJECT</button></div>
+                </div>
+                <div class="d-none d-md-block col-md-6 px-0">
+                    <div class="test"></div>
+                    <img src="./assets/img/projects/hangMan-resized.svg" alt=""class="rounded-right img-fluid bg-info">
+                </div>
             </div>
         </div>
-
-        <div class="row shadow-sm mb-5 bg-white rounded">
-            <div class="col text-center">
-                <div><h3>The hangman <br> <em>Python</em></h3></div>
-                <div>
-                    <p>A simple hangman</p>
-                    <p></p>
-                </div>
-                <div><button class="btn bg-info py-2 px-5  rounded-pill">VIEW PROJECT</button></div>
-            </div>
-            <div class="col px-0">
-                <div class="test"></div>
-                <img src="./assets/img/projects/hangMan.svg" alt=""class="rounded-right img-fluid bg-info">
-            </div>
-        </div>
-    
-
-        
-        
     </section>
 
+                                    <!----------------------------------WORK WITH ME------------------------------------------>
 
     <section class="row text-center">
-        <div class="col-12 title py-5">
+        <div class="col-12 title py-5 my-5">
             <h2>Work with me</h2>
         </div>
 
         <div class="col-12">
-            <div id="alert2" class="alert alert-success alert-dismissible fade show text-center" role="alert" style="display: none; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
-                <h5 class="alert-heading">Oups !</h5> <p>This part is still in progress. I need to learn more about PHP and ajax() method in order to make an efficient form. <br> Please e-mail me at <strong>tvn.terence@gmail.com</strong>.</p>
-                <button id="closePop2" type="button" class="close"  aria-label="Close"> <!-- data-dismiss="alert" -->
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
             <button id="talkButton2" class="btn btn-light py-2 px-5 rounded-pill">LET'S TALK</button>
         </div>
         
@@ -219,6 +225,8 @@
             <div><a href="https://github.com/Truong-Terence" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" class="mx-5 py-3 px-3 bg-white rounded-circle"></a></div>
         </div>
     </section>
+
+                                <!----------------------------------SCRIPTS------------------------------------------>
 
 </div>    
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
