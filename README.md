@@ -1,6 +1,6 @@
 [CONTACT](lien "Join me") [CV](pdf)
 # Junior developer
-![Logo](./styles/assets/img/activity.svg)
+![Logo](./assets/img/activity.svg)
 Soon to be fullstack developer !
 [LET'S TALK](lien "Join me")
 

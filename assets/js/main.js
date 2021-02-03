@@ -1,22 +1,19 @@
-var btn = document.getElementById("talkButton")
+/**
+ * 2 buttons linked to altert
+ * PHP Not learned yet so there is no form
+ * Allow to open the alert again with : display = "none" and not data-dismiss = "alert"
+ */
 var alertPop = document.getElementById("alert")
 
-btn.addEventListener("click", function() {
-    alertPop.style.display = "block"
-})
+function PopTheAlert() {alertPop.style.display = "block"}
 
-closePop.addEventListener("click", function() {
+document.getElementById("talkButton").addEventListener("click", PopTheAlert)
+document.getElementById("talkButton2").addEventListener("click", PopTheAlert)
+
+document.getElementById("closePop").addEventListener("click", function() {
     alertPop.style.display = "none"
 })
 
-var btn2 = document.getElementById("talkButton2")
-var alertPop2 = document.getElementById("alert2")
-var closePop2 = document.getElementById("closePop2")
-
-btn2.addEventListener("click", function() {
-    alertPop2.style.display = "block"
-})
-
-closePop2.addEventListener("click", function() {
-    alertPop2.style.display = "none"
-})
+/**
+ * Links to projects
+ */
