@@ -149,11 +149,6 @@ section.home-hero {
   transform: translateX(-80%);
 }
 
-/*
-.btn-contact {
-    background-color: $btn-color-contact !important;
-}
-*/
 .indexPlus {
   z-index: 5;
 }
