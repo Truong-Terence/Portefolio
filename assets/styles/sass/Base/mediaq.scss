@@ -1,7 +1,7 @@
                 //      HERO        //
 @media (min-width: 768px) {
     section.home-hero {
-        height: 492px;
+        height: 592px;
     }
 }
 
@@ -26,6 +26,18 @@
 
 @media (min-width: 1200px) {
     .hero-pattern-bg {
+        width: 1920px;
+    }
+}
+
+@media (min-width: 992px) {
+    .bero-pattern-bg {
+        width: 1440px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bero-pattern-bg {
         width: 1920px;
     }
 }
