@@ -5,13 +5,10 @@ html body{
     width: 100%;
     background-color: #eff1f5;
 }
-.app {
-    position: relative;
-    overflow-x: hidden;
-    min-height: 100vh;
-}
 
-.nav-link { //Override Bs4
+                //          Override Fonts                //
+
+.nav-link {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
@@ -19,10 +16,21 @@ html body{
     font-size: .8em;
 }
 
-/*                              CLASSES                             */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+p {
+    font-family: 'Lora', serif;
+}
 
 
-                //          HERO                //
+                //          HERO bg                //
+
+.app { // Hide to ajust bg
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
 
 section.home-hero {
     display: flex;

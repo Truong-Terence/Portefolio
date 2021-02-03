@@ -16,12 +16,6 @@ html body {
   background-color: #eff1f5;
 }
 
-.app {
-  position: relative;
-  overflow-x: hidden;
-  min-height: 100vh;
-}
-
 .nav-link {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -30,7 +24,20 @@ html body {
   font-size: 0.8em;
 }
 
-/*                              CLASSES                             */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Lora", serif;
+}
+
+.app {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
 section.home-hero {
   display: flex;
   justify-content: center;
