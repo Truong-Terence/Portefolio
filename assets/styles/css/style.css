@@ -39,6 +39,10 @@ p {
   font-family: "Lora", serif;
 }
 
+li {
+  font-family: "Lora", serif;
+}
+
 .app {
   position: relative;
   overflow-x: hidden;
