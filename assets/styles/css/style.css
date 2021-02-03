@@ -149,6 +149,14 @@ section.home-hero {
   transform: translateX(-80%);
 }
 
+.standardTripleColumns {
+  min-height: 670px;
+}
+
+.standardCard {
+  min-height: 450px;
+}
+
 .indexPlus {
   z-index: 5;
 }

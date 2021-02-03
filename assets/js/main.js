@@ -14,6 +14,3 @@ document.getElementById("closePop").addEventListener("click", function() {
     alertPop.style.display = "none"
 })
 
-/**
- * Links to projects
- */
