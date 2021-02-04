@@ -48,7 +48,7 @@
         <div class="row">
             <nav class=" col navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="./index.html">
-                    <img class="rounded-circle border border-3" src="./matete.png" width="60" height="80" alt="Site logo">
+                    <img class="rounded-circle border border-3" src="./assets/img/matete.png" width="60" height="80" alt="Site logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
@@ -109,77 +109,117 @@
         
                                 <!----------------------------------SKILLS------------------------------------------>
 
-            <div class="row shadow-sm px-0 mb-5 bg-white rounded">
-
-                <div class="standardTripleColumns col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 mb-2 mb-md-0">
-                    <div><img src="./assets/img/skills/ux.svg" alt="" height="100" width="150"></div>
-                    <div><h3>Front-End</h3><p>Front-end is in constant evolution. I enjoy myself racking my brain to sort out the small details, wether visual or practical.</p></div>
-                    <div><h4>Languages</h4><p>Javascript, HTML5, CSS3, Sass, Markdown</p></div>
-                    <div><h4>Tools</h4>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <ul class="col">
-                                    <li class="list-unstyled">Bootstrap 4</li>
-                                    <li class="list-unstyled">WordPress 5</li>
-                                    <li class="toCome list-unstyled">Jquery</li>
-                                    <li class="toCome list-unstyled">Vue.js</li>
-                                </ul>
-                                <ul class="col">
-                                    <li class="toCome list-unstyled">Angular</li>
-                                    <li class="toCome list-unstyled">And more to discover !</li>
-                                </ul>
+            <div class="row">
+                <div class="col">
+                    <div id="carouselControls" class="carousel slide" data-ride="carousel" data-interval="300000">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselControls" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselControls" data-bs-slide-to="1"></li>
+                            </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <div class="row shadow-sm px-1 mb-5 bg-white rounded">
+            
+                                <div class="standardTripleColumns col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 mb-2 mb-md-0">
+                                    <div><img src="./assets/img/skills/ux.svg" alt="" height="100" width="150"></div>
+                                    <div><h3>Front-End</h3><p>Front-end is in constant evolution. I enjoy myself racking my brain to sort out the small details, wether visual or practical.</p></div>
+                                    <div><h4>Languages</h4><p>Javascript, HTML5, CSS3, Sass, Markdown</p></div>
+                                    <div><h4>Tools</h4>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <ul class="col">
+                                                    <li class="list-unstyled">Bootstrap 4</li>
+                                                    <li class="list-unstyled">WordPress 5</li>
+                                                    <li class="toCome list-unstyled">Jquery</li>
+                                                    <li class="toCome list-unstyled">Vue.js</li>
+                                                </ul>
+                                                <ul class="col">
+                                                    <li class="toCome list-unstyled">Angular</li>
+                                                    <li class="toCome list-unstyled">And more to discover !</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="standardTripleColumns col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 my-2 my-md-0">
+                                    <div class=><img src="./assets/img/skills/dev.svg" alt="" height="100" width="150"></div>
+                                    <div><h3>More</h3><p>I discovered the world of development with python, I intend to deepen this language and more !</p></div>
+                                    <div><h4>Languages</h4><p>Python, <span class="toCome">Java</span>, <span class="toCome">C</span>, <span class="toCome">C++</span>, <span class="toCome">Ruby</span></p>
+                                    </div>
+                                    <div><h4>Tools</h4>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <ul class="col">
+                                                    <li class="list-unstyled">Git</li>
+                                                    <li class="toCome list-unstyled">Symfony</li>
+                                                    <li class="toCome list-unstyled">Django</li>
+                                                    <li class="toCome list-unstyled">Unreal Engine 4</li>
+                                                </ul>
+                                                <ul class="col">
+                                                    <li class="toCome list-unstyled">And more to discover !</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="standardTripleColumns col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 mt-2 mt-md-0">
+                                    <div><img src="./assets/img/skills/server.svg" alt="" height="100" width="150"></div>
+                                    <div><h3>Back-End</h3><p>The cogs of the web ! The mechanical part of web development that already fascinates me as I start in the back-end.</p></div>
+                                    <div><h4>Languages</h4><p>Javascript, <span class="toCome">PHP</span></p></div>
+                                    <div><h4>Tools</h4>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <ul class="col">
+                                                    <li class="toCome list-unstyled">API REST</li>
+                                                    <li class="toCome list-unstyled">MySQL</li>
+                                                    <li class="toCome list-unstyled">OWASP</li>
+                                                </ul>
+                                                <ul class="col">
+                                                    <li class="toCome list-unstyled">Node.js</li>
+                                                    <li class="toCome list-unstyled">Express</li>
+                                                    <li class="toCome list-unstyled">MangoDB</li>
+                                                    <li class="toCome list-unstyled">SEO</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="standardTripleColumns col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 my-2 my-md-0">
-                    <div class=><img src="./assets/img/skills/dev.svg" alt="" height="100" width="150"></div>
-                    <div><h3>More</h3><p>I discovered the world of development with python, I intend to deepen this language and more !</p></div>
-                    <div><h4>Languages</h4><p>Python, <span class="toCome">Java</span>, <span class="toCome">C</span>, <span class="toCome">C++</span>, <span class="toCome">Ruby</span></p>
-                    </div>
-                    <div><h4>Tools</h4>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <ul class="col">
-                                    <li class="list-unstyled">Git</li>
-                                    <li class="toCome list-unstyled">Symfony</li>
-                                    <li class="toCome list-unstyled">Django</li>
-                                    <li class="toCome list-unstyled">Unreal Engine 4</li>
-                                </ul>
-                                <ul class="col">
-                                    <li class="toCome list-unstyled">And more to discover !</li>
-                                </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="standardTripleColumns col-xs-12 col-md-4 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 mt-2 mt-md-0">
-                    <div><img src="./assets/img/skills/server.svg" alt="" height="100" width="150"></div>
-                    <div><h3>Back-End</h3><p>The cogs of the web ! The mechanical part of web development that already fascinates me as I start in the back-end.</p></div>
-                    <div><h4>Languages</h4><p>Javascript, <span class="toCome">PHP</span></p></div>
-                    <div><h4>Tools</h4>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <ul class="col">
-                                    <li class="toCome list-unstyled">API REST</li>
-                                    <li class="toCome list-unstyled">MySQL</li>
-                                    <li class="toCome list-unstyled">OWASP</li>
-                                </ul>
-                                <ul class="col">
-                                    <li class="toCome list-unstyled">Node.js</li>
-                                    <li class="toCome list-unstyled">Express</li>
-                                    <li class="toCome list-unstyled">MangoDB</li>
-                                    <li class="toCome list-unstyled">SEO</li>
-                                </ul>
-                            </div>
-                        </div>
+                            <div class="carousel-item">
+                                <div class="row shadow-sm px-0 mb-5 bg-white rounded">
+            
+                                    <div class="col-xs-12 col-md-3 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 mb-2 mb-md-0">
+                                        
+                                    </div>
                     
-                    </div>
-                </div>
+                                    <div class="col-xs-12 col-md-6 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-0 my-2 my-md-0">
+                                        <img class="img-fluid shadow" src="./assets/img/skills/CV_Térence_renard--truong_van_nga.png" alt="">  
+                                    </div>
+                    
+                                    <div class="col-xs-12 col-md-3 col-centered d-flex flex-column justify-content-around text-center shadow-sm py-3 py-md-5 mt-2 mt-md-0">
 
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Précédent</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                            </a>
+                        </div>
+                </div>
             </div>
+                                
         </section>
 
                                     <!----------------------------------PROJECTS------------------------------------------>
@@ -196,7 +236,7 @@
                     <div class="d-none d-md-block col-md-6 px-0">
                         <img src="./assets/img/projects/wheel.svg" alt="" class="rounded-left img-fluid bg-success">
                     </div>
-                    <div class="standardTripleColumns col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center py-3 py-md-0">
+                    <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center py-3 py-md-0">
                         <div><h3>The wheel</h3><div class="mtst">html css</div></div>
                         <div class="d-none d-md-block">
                             <p>A wheel of fortune. /!\WITH NOISE/!\</p>
@@ -207,7 +247,7 @@
             
 
                 <div class="row shadow-sm mb-5 bg-white rounded">
-                    <div class="standardTripleColumns col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center py-3 py-md-0">
+                    <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center py-3 py-md-0">
                         <div><h3>The hangman</h3><div class="mtst">Python</div></div>
                         <div class="d-none d-md-block">
                             <p>A simple hangman</p>
@@ -252,6 +292,7 @@
             </section>
         </div>
     </div>
+
 </div>
 </div>
 
