@@ -13,3 +13,19 @@ document.getElementById("talkButton2").addEventListener("click", PopTheAlert)
 document.getElementById("closePop").addEventListener("click", function() {
     alertPop.style.display = "none"
 })
+
+var trinket = document.getElementById("hiddenTrinket")
+var showTrinket = document.getElementById("showTrinket")
+var showTrinketText = document.querySelector("#showTrinket span")
+trinket.style.display = "none"
+showTrinket.addEventListener("click", function() {
+    if (trinket.style.display === "none") {
+        trinket.style.display = "block"
+        showTrinketText.innerHTML = "<span>hide project</span>"
+        console.log(trinket.style.display)
+    } else {
+        trinket.style.display = "none"
+        console.log(trinket.style.display)
+        showTrinketText.innerHTML = "<span>view project</span>"
+    }
+})
