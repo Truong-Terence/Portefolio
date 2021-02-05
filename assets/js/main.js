@@ -14,10 +14,17 @@ document.getElementById("closePop").addEventListener("click", function() {
     alertPop.style.display = "none"
 })
 
+/**
+ * Show and hide python project on maine page
+ * Animation with keyframes
+ */
 var trinket = document.getElementById("hiddenTrinket")
 var showTrinket = document.getElementById("showTrinket")
 var showTrinketText = document.querySelector("#showTrinket span")
 trinket.style.display = "none"
+
+
+
 showTrinket.addEventListener("click", function() {
     if (trinket.style.display === "none") {
         trinket.style.display = "block"
@@ -29,3 +36,4 @@ showTrinket.addEventListener("click", function() {
         showTrinketText.innerHTML = "<span>view project</span>"
     }
 })
+
