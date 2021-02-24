@@ -24,16 +24,14 @@ var showTrinketText = document.querySelector("#showTrinket span")
 trinket.style.display = "none"
 
 
-
 showTrinket.addEventListener("click", function() {
     if (trinket.style.display === "none") {
+        $("#hiddenTrinket").removeClass("hideBackTrinket").addClass("hiddenTrinket")
         trinket.style.display = "block"
         showTrinketText.innerHTML = "<span>hide project</span>"
-        console.log(trinket.style.display)
     } else {
+        $("#hiddenTrinket").removeClass("hiddenTrinket").addClass("hideBackTrinket")
         trinket.style.display = "none"
-        console.log(trinket.style.display)
         showTrinketText.innerHTML = "<span>view project</span>"
     }
 })
-
