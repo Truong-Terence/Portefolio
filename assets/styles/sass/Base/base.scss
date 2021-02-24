@@ -21,15 +21,17 @@ header {
     font-size: .8em;
 }
 
-nav:hover {
-    #logo {
-        animation: triangle 5000ms linear infinite;
-        transform-origin: 50% 35%;
-    #letterLogo {
-        animation: stab 5000ms linear infinite;
-        transform-origin: 50% 35%;
+nav {
+    &:hover {
+        #logo {
+            animation: triangle 5000ms linear infinite;
+            transform-origin: 50% 35%;
+        }
+        #letterLogo {
+            animation: stab 5000ms linear infinite;
+            transform-origin: 50% 35%;
+        }
     }
-}
 }
 
 

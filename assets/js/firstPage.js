@@ -14,12 +14,14 @@ document.getElementById("closePop").addEventListener("click", function() {
     alertPop.style.display = "none"
 })
 
+var showTrinketText = document.querySelector(".showTrinket span")
+
 showTrinketHangman.addEventListener("click", function() {
-    if (trinket.style.display === "none") {
-        trinket.style.display = "block"
+    if (trinketHangman.style.display === "none") {
+        trinketHangman.style.display = "block"
         showTrinketText.innerHTML = "<span>hide project</span>"
     } else {
-        trinket.style.display = "none"
+        trinketHangman.style.display = "none"
         showTrinketText.innerHTML = "<span>view project</span>"
     }
 })
