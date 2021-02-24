@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">
+    <link rel="icon" type="image/png" href="./logo.png">
 
     <title>Térence Renard Truong</title>
 </head>
@@ -48,9 +48,38 @@
 
             <div class="row">
                 <nav class=" col navbar navbar-expand-md navbar-light">
-                    <!-- <a class="navbar-brand" href="./index.html"> -->
-                        <!-- <img class="rounded-circle border border-3" src="./assets/img/matete.png" width="60" height="80" alt="Site logo"> -->
-                    <!-- </a> -->
+                    <a class="navbar-brand" href="./index.html">
+                        <svg id="logo" width="60" height="40" viewBox="0 0 171 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="triangleLogo" filter="url(#filter0_i)">
+                            <path d="M168.464 1.49999L85.2635 152.886L2.06296 1.50001L168.464 1.49999Z" stroke="black" stroke-width="3"/>
+                            </g>
+                            <g id="letterLogo" filter="url(#filter1_i)">
+                            <path d="M85 78V30M63 30H107" stroke="black" stroke-width="3"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_i" x="0.216209" y="-7.62939e-06" width="170.095" height="158.924" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+                            </filter>
+                            <filter id="filter1_i" x="63" y="28.5" width="44" height="53.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+                            </filter>
+                            </defs>
+                            </svg>       
+                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -184,6 +213,10 @@
                     </div>
                 </div>
             </div>
+                                    <!----------------------------------CV------------------------------------------>
+            <div>
+                <button class="btn bg-warning pt-1 pb-2 px-5 rounded-pill"><a class="mtst text-decoration-none text-white" href="" download="./CV_Térence_Renard--Truong_Van_Nga.pdf">Curriculum Vitae</a></button>
+            </div>
                                 
         </section>
 
@@ -204,7 +237,7 @@
                     <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around text-center py-3 py-md-0">
                         <div><h3>The wheel</h3><div class="mtst">html css</div></div>
                         <div class="d-none d-md-block">
-                            <p>A wheel of fortune. /!\WITH NOISE/!\</p>
+                            <p>A wheel of fortune /!\WITH NOISE/!\</p>
                         </div>
                         <div><button class="btn bg-success py-2 px-5 rounded-pill"><a class="mtst text-decoration-none text-white stretched-link" href="https://truong-terence.github.io/One-wheel-to-rule-them-all.github.io/" target="_blank">view project</a></button></div>
                     </div>
@@ -218,16 +251,16 @@
                             <p>A simple hangman</p>
                             <p></p>
                         </div>
-                        <div><button id="showTrinket" class="btn bg-info py-2 px-5 rounded-pill stretched-link"><span class="mtst text-white">view project</span></button></div>
+                        <div><button class="showTrinket btn bg-info py-2 px-5 rounded-pill stretched-link"><span class="mtst text-white">view project</span></button></div>
                     </div>
                     <div class="d-none d-md-block col-md-6 px-0">
                         <div class="test"></div>
                         <img src="./assets/img/projects/hangMan-resized.svg" alt="" class="rounded-right img-fluid bg-info">
                     </div>
                 </div>
-                <div id="hiddenTrinket" class="row shadow-lg hiddenTrinket">
+                <div class="hiddenTrinketMain hiddenTrinket row shadow-lg">
                     <div class="col">
-                        <iframe src="https://trinket.io/embed/python/12392d952d" width="auto" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <iframe src="https://trinket.io/embed/python/12392d952d" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="row">
@@ -261,7 +294,7 @@
                     </div>
                 
                     <div class="col-12 my-4 d-flex justify-content-center align-items-center">
-                        <div><a class="mx-5 py-3 px-3 bg-white rounded-circle " href="https://www.linkedin.com/in/térence-renard-truong-van-nga-7b481619a/" target="_blank"><img src="./assets/img/reseaux/linkedin.svg" alt=""></a></div>
+                        <div><a class="mx-5 py-3 px-3 bg-white rounded-circle" href="https://www.linkedin.com/in/térence-renard-truong-van-nga-7b481619a/" target="_blank"><img src="./assets/img/reseaux/linkedin.svg" alt=""></a></div>
                         <div><a class="mx-5 py-3 px-3 bg-white rounded-circle" href="https://github.com/Truong-Terence" target="_blank"><img src="./assets/img/reseaux/githubOrange.svg" alt=""></a></div>
                     </div>
                 </div>
