@@ -54,6 +54,49 @@ header {
   font-size: 0.8em;
 }
 
+nav:hover #logo {
+  animation: triangle 5000ms linear infinite;
+  transform-origin: 50% 35%;
+}
+nav:hover #logo #letterLogo {
+  animation: stab 5000ms linear infinite;
+  transform-origin: 50% 35%;
+}
+
+@keyframes triangle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes stab {
+  0% {
+    transform: rotate(0deg) rotateY(0deg) translateY(0%);
+  }
+  25% {
+    transform: rotate(-90deg) rotateY(45deg) translateY(-5%);
+  }
+  50% {
+    transform: rotate(-180deg) rotateY(90deg) translateY(5%);
+  }
+  75% {
+    transform: rotate(-270deg) rotateY(135deg) translateY(-5%);
+  }
+  100% {
+    transform: rotate(-360deg) rotateY(180deg) translateY(0%);
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }

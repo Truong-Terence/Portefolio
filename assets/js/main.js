@@ -15,22 +15,22 @@ document.getElementById("closePop").addEventListener("click", function() {
 })
 
 /**
- * Show and hide python project on maine page
+ * Show and hide python project
  * Animation with keyframes
  */
-var trinket = document.getElementById("hiddenTrinket")
-var showTrinket = document.getElementById("showTrinket")
-var showTrinketText = document.querySelector("#showTrinket span")
+var trinket = document.querySelector(".hiddenTrinket")
+var showTrinket = document.querySelector(".showTrinket")
+var showTrinketText = document.querySelector(".showTrinket span")
 trinket.style.display = "none"
 
 
 showTrinket.addEventListener("click", function() {
     if (trinket.style.display === "none") {
-        $("#hiddenTrinket").removeClass("hideBackTrinket").addClass("hiddenTrinket")
+        $(".hiddenTrinketMain").removeClass("hideBackTrinket").addClass("hiddenTrinket")
         trinket.style.display = "block"
         showTrinketText.innerHTML = "<span>hide project</span>"
     } else {
-        $("#hiddenTrinket").removeClass("hiddenTrinket").addClass("hideBackTrinket")
+        $(".hiddenTrinketMain").removeClass("hiddenTrinket").addClass("hideBackTrinket")
         trinket.style.display = "none"
         showTrinketText.innerHTML = "<span>view project</span>"
     }

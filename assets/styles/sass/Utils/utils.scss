@@ -5,11 +5,9 @@
 $bg-color : #eff1f5;
 
 
-
-
 .hiddenTrinket {
-    transform-origin: right;
-    animation: showProject 700ms both;
+        transform-origin: right;
+        animation: showProject 700ms both;
 }
 
 @keyframes showProject {
