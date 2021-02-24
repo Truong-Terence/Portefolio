@@ -19,17 +19,17 @@ $bg-color : #eff1f5;
         animation-timing-function: cubic-bezier(.73,.01,.2,.99)
     }
 }
-.hideBackTrinket {
-    transform-origin: right;
-    animation: hideProject 700ms both;
-}
+// .hideBackTrinket {
+//     transform-origin: right;
+//     animation: hideProject 700ms both;
+// }
 
-@keyframes hideProject {
-    0% {
-        transform: scale(1,1);
-    }
-    66% {
-        transform: scale(0,.05);
-        animation-timing-function: cubic-bezier(.73,.01,.2,.99)
-    }
-}
+// @keyframes hideProject {
+//     0% {
+//         transform: scale(1,1);
+//     }
+//     66% {
+//         transform: scale(0,.05);
+//         animation-timing-function: cubic-bezier(.73,.01,.2,.99)
+//     }
+// }
