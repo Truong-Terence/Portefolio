@@ -72,7 +72,6 @@
         </div>
         <div class="row">
             <ul class="col">
-                <li>Make a logo + rotate + scla => @T</li>
                 <li>Add a complete documentation on HTML / CSS / JS</li>
                 <li>Update README.md</li>
                 <li>Make better network bubbles, maybe add particules if not too much</li>
@@ -82,6 +81,7 @@
                 <li>Add lines in read me Python's projects + projects</li>
                 <li>finish the ordored dictionary</li>
                 <li>CEO</li>
+                <li>hover border animated ---</li>
             </ul>
             <ul class="col">
                 <li>Make a nice animation on LET'S TALK Buttons when scrolling</li>
@@ -92,7 +92,11 @@
                 <li>Create nicer buttons and add gradient colors on it. Maybe SVG creation</li>
                 <li>Modify background to make it nicer. Maybe try 3D</li>
                 <li>Check on colors $primary, $info, ...</li>
-                <li>add a CV button dl</li>
+                <li>Bubble notif : press RUN</li>
+                <li>Lucas Vittaz.fr to link</li>
+                <li>Animate more svg (wheel, tree)</li>
+                <li>xs and sm : put link# on projects</li>
+                <li>smooth scrolling js</li>
                 
             </ul>
         </div>
@@ -108,24 +112,24 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-lg-4 my-3 my-lg-0">
                     <div id="theWheel" class="card standardCard">
-                        <a href="https://truong-terence.github.io/One-wheel-to-rule-them-all.github.io/" target="_blank"><img class="img-fluid rounded-top" src="./assets/img/projects/cards/wheel.png" alt=""></a>
+                        <a href="https://truong-terence.github.io/One-wheel-to-rule-them-all.github.io/" target="_blank" class="stretched-link"><img class="img-fluid rounded-top" src="./assets/img/projects/cards/wheel.png" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">The Wheel</h4>
-                            <div class="row d-flex align-items-center">
-                                <p class="col-10 card-text"><span class="mtst">Nothing but a wheel... of fortune</span> <br> It was built for fun but in the hurry for the 31/12/2020. This web app is simple : Press the button, the wheel turns, you get a theme for your New Year Party ! </p>
-                                <a class="col-2" href="https://github.com/Truong-Terence/One-wheel-to-rule-them-all.github.io" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
+                            <div class="d-flex align-items-center">
+                                <p class="col-11 card-text"><span class="mtst">Nothing but a wheel... of fortune</span> <br> It was built for fun but in the hurry for the 31/12/2020. This web app is simple : Press the button, the wheel turns, you get a theme for your New Year Party ! </p>
+                                <a class="col-1 github_btn" href="https://github.com/Truong-Terence/One-wheel-to-rule-them-all.github.io" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
     
                             </div>
                         </div>
                     </div>
                 </div><div class="col-xs-12 col-md-6 col-lg-4 my-3 my-lg-0">
                     <div id="webClass" class="card standardCard">
-                        <a href="https://truong-terence.github.io/Web-Class.github.io/" target="_blank"><img class="img-fluid rounded-top" src="./assets/img/projects/cards/childSchool.jpg" alt=""></a>
+                        <a href="https://truong-terence.github.io/Web-Class.github.io/" target="_blank" class="stretched-link"><img class="img-fluid rounded-top" src="./assets/img/projects/cards/childSchool.jpg" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">Web class</h4>
-                            <div class="row d-flex align-items-center">
-                                <p class="col-10 card-text"><span class="mtst">A website with our first tests</span> <br>When we started learning HTML-CSS, Lucas Vittaz and I practiced and marked the course on this site to simulate a real project.</p>
-                                <a class="col-2" href="https://github.com/Truong-Terence/Web-Class.github.io" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
+                            <div class="d-flex align-items-center">
+                                <p class="col-11 card-text"><span class="mtst">A website with our first tests</span> <br>When we started learning HTML-CSS, Lucas Vittaz and I practiced and marked the course on this site to simulate a real project.</p>
+                                <a class="col-1 github_btn" href="https://github.com/Truong-Terence/Web-Class.github.io" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
     
                             </div>
                         </div>
@@ -138,62 +142,56 @@
         <div class="row shadow-lg py-3 px-3 rounded my-5">
             <h2 class="text-center">Python</h2>
             <div class="row">
-                <div class="col-xs-12 col-md-6 col-lg-4 my-3 my-lg-0">
-                    <div id="theHangman" class="card standardCard">
-                        <img class="showTrinketHangman img-fluid rounded-top" role="button" src="./assets/img/projects/cards/hangman.png" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">The Hangman</h4>
-                            <div class="row d-flex align-items-center">
-                                <p class="col-10 card-text"><span class="mtst">Simple Hangman</span> <br> The original game is on github and you can register names and scores. This show a simpler version.</p>
-                                <a class="col-2" href="https://github.com/Truong-Terence/Tp_Python/tree/main/Hangman" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
+                    <div class="col-xs-12 col-md-6 col-lg-4 my-3 my-lg-0">
+                        <div id="theHangman" class="showTrinketHangman card standardCard">
+                            <a href="#trinketHangman" class="text-decoration-none text-dark stretched-link"><img class="img-fluid rounded-top" src="./assets/img/projects/cards/hangman.png" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">The Hangman</h4>
+                                <div class="d-flex align-items-center">
+                                    <p class="col-11 card-text"><span class="mtst">Simple Hangman</span> <br> The original game is on github and you can register names and scores. This show a simpler version.</p>
+                                    <a class="col-1 github_btn" href="https://github.com/Truong-Terence/Tp_Python/tree/main/Hangman" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-md-none">
-                        Poser ancre
-                    </div>
-                </div>
-                
-                <div class="col-xs-12 col-md-6 col-lg-4 my-3 my-lg-0">
-                    <div id="dictionary" class="card standardCard">
-                        <img class="showTrinketDico img-fluid rounded-top" role="button" src="./assets/img/projects/cards/dictionary.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">The Dictionary</h4>
-                            <div class="row d-flex align-items-center">
-                                <p class="col-10 card-text"><span class="mtst">Ordered Python dictionary</span> <br> Usually, a dictionary in Python is no ordored.. this is an exception. But ... Work in progress.</p>
-                                <a class="col-2" href="https://github.com/Truong-Terence/Tp_Python/tree/main/DictionnaireOrdonne" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
-    
+                    <div class="col-xs-12 col-md-6 col-lg-4 my-3 my-lg-0">
+                        <div id="dictionary" class="showTrinketDico card standardCard" role="button">
+                            <a href="#trinketDico" class="text-decoration-none text-dark stretched-link"><img class="img-fluid rounded-top" src="./assets/img/projects/cards/dictionary.jpg" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">The Dictionary</h4>
+                                <div class="d-flex align-items-center">
+                                    <p class="col-11 card-text"><span class="mtst">Ordered Python dictionary</span> <br> Usually, a dictionary in Python is no ordored.. this is an exception. But ... <span class="text-warning">Work in progress</span>.</p>
+                                    <a class="col-1 github_btn" href="https://github.com/Truong-Terence/Tp_Python/tree/main/DictionnaireOrdonne" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4 my-3 my-lg-0">
-                    <div id="casino" class="card standardCard">
-                        <img class="showTrinketCasino img-fluid rounded-top" role="button" src="./assets/img/projects/cards/casino.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">The Casino</h4>
-                            <div class="row d-flex align-items-center">
-                                <p class="col-10 card-text"><span class="mtst">A casino wheel</span> <br> Here is where you can play and indulge in betting !</p>
-                                <a class="col-2" href="https://github.com/Truong-Terence/Tp_Python/tree/main/Casino" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
-    
+                    <div class="col-xs-12 col-md-6 col-lg-4 my-3 my-lg-0">
+                        <div id="casino" class="showTrinketCasino card standardCard" role="button">
+                            <a href="#trinketCasino" class="text-decoration-none text-dark stretched-link"><img class="img-fluid rounded-top" src="./assets/img/projects/cards/casino.jpg" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">The Casino</h4>
+                                <div class="d-flex align-items-center">
+                                    <p class="col-11 card-text"><span class="mtst">A casino wheel</span> <br> Here is where you can play and indulge in betting !</p>
+                                    <a class="col-1 github_btn" href="https://github.com/Truong-Terence/Tp_Python/tree/main/Casino" target="_blank"><img src="./assets/img/reseaux/github.svg" alt="" ></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
-        <div class="d-none d-md-block">
-            <div class="hiddenTrinketHangman hiddenTrinket row shadow-lg">
+        <div>
+            <div id="trinketHangman" class="hiddenTrinketHangman hiddenTrinket row shadow-lg">
                 <div class="col">
                     <iframe src="https://trinket.io/embed/python/12392d952d" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class=" hiddenTrinketDico hiddenTrinket row shadow-lg">
+            <div id="trinketDico" class=" hiddenTrinketDico hiddenTrinket row shadow-lg">
                 <div class="col">
                     <iframe src="https://trinket.io/embed/python/9037ef6f9a" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class=" hiddenTrinketCasino hiddenTrinket row shadow-lg">
+            <div id="trinketCasino" class=" hiddenTrinketCasino hiddenTrinket row shadow-lg">
                 <div class="col">
                     <iframe src="https://trinket.io/embed/python/d4487287da" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                 </div>

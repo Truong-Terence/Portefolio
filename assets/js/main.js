@@ -5,3 +5,4 @@
 var trinketHangman = document.querySelector(".hiddenTrinketHangman")
 var showTrinketHangman = document.querySelector(".showTrinketHangman")
 trinketHangman.style.display = "none"
+
