@@ -15,4 +15,14 @@
 
 .standardCard {
     min-height: 450px;
+    &:hover {
+        opacity: .9;
+        transition-duration: 800ms;
+        transform: scale(1.05);
+    }
+}
+
+.github_btn {
+    z-index: 3;
+    position: relative;
 }
