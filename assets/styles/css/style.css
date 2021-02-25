@@ -216,8 +216,8 @@ section.home-hero {
   min-height: 450px;
 }
 .standardCard:hover {
-  opacity: 0.9;
-  transition-duration: 800ms;
+  opacity: 0.8;
+  transition-duration: 1000ms;
   transform: scale(1.05);
 }
 
@@ -226,6 +226,62 @@ section.home-hero {
   position: relative;
 }
 
+@media (min-width: 575px) {
+  .run {
+    position: absolute;
+    background: orange;
+    height: 10px;
+    width: 5px;
+    left: 31.5%;
+    top: 3%;
+    border-radius: 1px;
+    opacity: 0.7;
+    transform-origin: center;
+    animation: run 1800ms ease-in-out both;
+  }
+}
+@media (min-width: 768px) {
+  .run {
+    height: 10px;
+    width: 5px;
+    left: 17%;
+    top: 3%;
+  }
+}
+@media (min-width: 992px) {
+  .run {
+    height: 10px;
+    width: 5px;
+    left: 13%;
+    top: 3%;
+  }
+}
+@media (min-width: 1200px) {
+  .run {
+    height: 10px;
+    width: 10px;
+    left: 19%;
+    top: 3%;
+  }
+}
+
+@keyframes run {
+  0% {
+    transform: scaleX(0) scaleY(0);
+  }
+  25% {
+    transform: scaleX(9.5) scaleY(3.6);
+  }
+  50% {
+    transform: scaleX(0) scaleY(0);
+  }
+  75% {
+    transform: scaleX(9.5) scaleY(3.6);
+  }
+  100% {
+    transform: scale(0) scaleY(0);
+  }
+}
 .indexPlus {
   z-index: 5;
 }

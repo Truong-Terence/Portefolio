@@ -16,8 +16,8 @@
 .standardCard {
     min-height: 450px;
     &:hover {
-        opacity: .9;
-        transition-duration: 800ms;
+        opacity: .8;
+        transition-duration: 1000ms;
         transform: scale(1.05);
     }
 }
@@ -25,4 +25,55 @@
 .github_btn {
     z-index: 3;
     position: relative;
+}
+
+.run {
+    @media (min-width : 575px) {
+        position: absolute;
+        background: orange;
+        height: 10px;
+        width: 5px;
+        left: 31.5%;
+        top: 3%;
+        border-radius: 1px;
+        opacity: .7;
+        transform-origin: center;
+        animation: run 1800ms ease-in-out both;
+    }
+    @media (min-width : 768px) {
+        height: 10px;
+        width: 5px;
+        left: 17%;
+        top: 3%;
+    }
+    @media (min-width : 992px) {
+        height: 10px;
+        width: 5px;
+        left: 13%;
+        top: 3%;
+    }
+    @media (min-width : 1200px) {
+        height: 10px;
+        width: 10px;
+        left: 19%;
+        top: 3%;
+    }
+}
+
+@keyframes run {
+    0% {
+        transform: scaleX(0) scaleY(0);
+    }
+    25% {
+        transform: scaleX(9.5) scaleY(3.6);
+    }
+    50% {
+        transform: scaleX(0) scaleY(0);
+    }
+    75% {
+        transform: scaleX(9.5) scaleY(3.6);
+    }
+    100% {
+        transform: scale(0) scaleY(0);
+    }
 }
