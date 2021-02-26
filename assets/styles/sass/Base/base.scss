@@ -4,7 +4,13 @@ html body{
     height: 100%;
     width: 100%;
     background-color: $bg-color;
+    &.darkMode {
+        background-color: #222f3e;
+        color: white;
+    }
 }
+
+
 
                 //          Override Fonts                //
 
@@ -88,13 +94,15 @@ p {
     a {
         color: black;
         font-weight: bold;
+        &:hover {
+            color: #F97F51;
+        }
     }
 }
 
 li {
     font-family: 'Lora', serif;
 }
-
 
                 //          HERO bg                //
 

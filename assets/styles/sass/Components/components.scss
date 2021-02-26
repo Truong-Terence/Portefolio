@@ -1,4 +1,62 @@
-.title:after {
+                //          Switch buttons                //
+// Dark Mode
+
+.switch { /* The box around the slider */
+    position: relative;
+    top: 7px;
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    input {   /* Hide default HTML checkbox */
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:checked + .slider {
+            background-color: #222f3e93;
+            &:before {
+                transform: translateX(16px);
+              }
+          }
+        &:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+          }
+      }
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    &:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: -1px;
+        bottom: -2px;
+        background-color: black;
+        background-image: url("/assets/img/moon.svg");
+        background-size: 95%;
+        background-repeat: no-repeat;
+        transition: .4s;
+      }
+  }
+    
+  .slider.round {   /* Rounded sliders */
+    border-radius: 34px;
+    &:before {
+        border-radius: 50%;
+      }
+  }
+
+
+.title:after { // Underline on titles
     width: 50px;
     height: 4px;
     margin: 10px;
@@ -8,6 +66,8 @@
     background-color: #F97F51;
     transform: translateX(-80%);
 }
+
+                //          Card and Boxes                //
 
 .standardTripleColumns {
     min-height: 670px;
@@ -32,6 +92,8 @@
         transition-duration: 600ms;
     }
 }
+
+                //          Help Trinket Python                //
 
 .run {
     @media (min-width : 575px) {
