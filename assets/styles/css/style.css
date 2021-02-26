@@ -5,6 +5,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+.bg-box-darkMode {
+  background-color: #283749;
+  border: 1px solid #dff9fb;
+  box-shadow: 3px 2px 5px #dff9fb;
+}
+
+.boxCardDark {
+  background-color: #29394A;
+}
+
 .hiddenTrinket {
   transform-origin: right;
   animation: showProject 700ms both;
@@ -25,6 +35,10 @@ html body {
   height: 100%;
   width: 100%;
   background-color: #eff1f5;
+}
+html body.darkMode {
+  background-color: #222f3e;
+  color: white;
 }
 
 header {
@@ -100,6 +114,9 @@ p {
 p a {
   color: black;
   font-weight: bold;
+}
+p a:hover {
+  color: #F97F51;
 }
 
 li {
@@ -197,6 +214,63 @@ section.home-hero {
     width: 2220px;
   }
 }
+.switch {
+  /* The box around the slider */
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  width: 30px;
+  height: 14px;
+}
+.switch input {
+  /* Hide default HTML checkbox */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch input:checked + .slider {
+  background-color: #222f3e93;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(16px);
+}
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: -1px;
+  bottom: -2px;
+  background-color: black;
+  background-image: url("/assets/img/moon.svg");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+.slider.round {
+  /* Rounded sliders */
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .title:after {
   width: 50px;
   height: 4px;
@@ -4616,7 +4690,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: FEFEFE;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;

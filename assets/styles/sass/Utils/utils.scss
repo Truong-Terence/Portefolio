@@ -1,9 +1,18 @@
 /**
  * VARIABLES
 **/
-
+//#972137 nice color
 $bg-color : #eff1f5;
+$card-bg : FEFEFE;
 
+.bg-box-darkMode {
+    background-color: #283749;
+    border: 1px solid #dff9fb;
+    box-shadow: 3px 2px 5px #dff9fb ;
+}
+.boxCardDark {
+    background-color: #29394A;
+}
 
 .hiddenTrinket {
         transform-origin: right;
