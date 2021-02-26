@@ -221,15 +221,21 @@ section.home-hero {
   transform: scale(1.05);
 }
 
-.github_btn {
+.overCard {
   z-index: 3;
   position: relative;
+}
+.overCard:hover {
+  transform: scale(1.3);
+  font-size: 1.1em;
+  color: #F97F51;
+  transition-duration: 600ms;
 }
 
 @media (min-width: 575px) {
   .run {
     position: absolute;
-    background: orange;
+    background: #F97F51;
     height: 10px;
     width: 5px;
     left: 31.5%;
